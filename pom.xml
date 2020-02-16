@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+	     
+	<groupId>org.jeesl.bom</groupId>
+	<artifactId>bom</artifactId>
+	<packaging>pom</packaging>
+	<version>0.2.6-SNAPSHOT</version>
+    
+	<name>JEESL (JavaEE Support Library) BOM</name>
+	<url>https://github.com/aht-group/bom</url>
+	<description>Utilities and Helper for JavaEE Developments (JavaEE Support Library)</description>
+
+	<modules>
+		
+	</modules>
+
+	<properties>
+		<my.build.directory>target</my.build.directory>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	
+  </properties>
+    
+	<prerequisites>
+		<maven>3.1</maven>
+	</prerequisites>
+    
+	<licenses>
+		<license>
+			<name>GNU General Public License</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/aht-group/bom.git</url>
+		<connection>scm:git:git://github.com/aht-group/bom.git</connection>
+		<developerConnection>scm:git:git@github.com/aht-group/bom.git</developerConnection>
+	</scm>
+	
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>Thorsten Kisner</name>
+			<email>thorsten-k@sourceforge.net</email>
+		</developer>
+	</developers>
+
+	<issueManagement>
+	</issueManagement>
+	
+	<dependencyManagement>
+	</dependencyManagement>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+				</plugin>
+				<plugin>
+			        <groupId>org.codehaus.mojo</groupId>
+			        <artifactId>versions-maven-plugin</artifactId>
+			        <version>2.2</version>
+				</plugin>
+    		</plugins>
+  		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			
+		</plugins>
+	</build>
+		
+	<repositories>
+		<repository>
+			<!--Aspose for WordRendering -->
+			<id>AsposeJavaAPI</id>
+			<name>Aspose Java API</name>
+			<url>https://repository.aspose.com/repo/</url>
+		</repository>
+		<repository>
+			<id>aht.3rd</id>
+			<name>AHT Nexus Third Party</name>
+			<url>https://www.aht-group.com/nexus/content/repositories/thirdparty</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
+		</repository>
+		<repository>
+			<id>sonatype.snapshot</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</repository>
+        <repository>
+            <id>jboss.public</id>
+            <name>JBoss Repository</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public</url>
+            <releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
+        </repository>
+		<repository>
+            <id>redhat.ga</id>
+            <name>JBoss Repository</name>
+            <url>https://maven.repository.redhat.com/ga</url>
+            <releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
+        </repository>
+	</repositories>
+  
+  <distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+  
+	<profiles>
+		<profile>
+			<id>ram</id>
+       		<build>
+       			<directory>${my.build.directory}</directory>
+       		</build>
+		</profile>
+	</profiles>
+</project>

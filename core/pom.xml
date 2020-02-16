@@ -14,6 +14,7 @@
 
 	<dependencyManagement>
         <dependencies>
+
         	<!-- JEESL -->
 			<dependency>
 				<groupId>org.jeesl</groupId>
@@ -85,7 +86,7 @@
 		    </dependency>
 			<dependency>
 				<groupId>org.jeesl</groupId>
-				<artifactId>jeesl-mail</artifactId>
+				<artifactId>jeesl-prototype</artifactId>
 				<version>${project.version}</version>
 		    </dependency>
 		    <dependency>
@@ -193,12 +194,12 @@
         	</dependency> 
         
         	<!-- JBoss -->
-            <dependency>
+        	<dependency>
                 <groupId>org.jboss.as</groupId>
                 <artifactId>jboss-as-ejb-client-bom</artifactId>
                 <version>7.1.1.Final</version>
                 <type>pom</type>
-            </dependency>
+            </dependency>     
             <dependency>
 	            <groupId>org.jboss.spec</groupId>
 	            <artifactId>jboss-javaee-web-6.0</artifactId>
@@ -220,6 +221,11 @@
 			</dependency>
 			
 			<!-- Hibernate JBoss AS 7 -->
+			<dependency>
+        		<groupId>org.hibernate</groupId>
+        		<artifactId>hibernate-core</artifactId>
+        		<version>4.0.1.Final</version>
+        	</dependency>
 	        <dependency>
 	            <groupId>org.hibernate</groupId>
 	            <artifactId>hibernate-validator</artifactId>
@@ -232,58 +238,9 @@
 	               </exclusion>
 	            </exclusions>
 	         </dependency>
-	         <dependency>
-        		<groupId>org.hibernate</groupId>
-        		<artifactId>hibernate-core</artifactId>
-        		<version>4.0.1.Final</version>
-        	</dependency>
+	        
             
-			<!-- SEAM -->
-			<dependency>
-	   			<groupId>org.jboss.solder</groupId>
-	   			<artifactId>solder-impl</artifactId>
-	   			<version>3.1.0.Final</version>
-	   		</dependency>
-            <dependency>
-	   			<groupId>org.jboss.seam.international</groupId>
-	   			<artifactId>seam-international-api</artifactId>
-	   			<version>3.1.0.Final</version>
-			</dependency>
-		  	<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-core</artifactId>
-				<version>5.3.1.Final</version>
-		 	</dependency>
-		 	<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-compiler</artifactId>
-				<version>5.3.1.Final</version>
-		  	</dependency>
-		  	<dependency>
-			    <groupId>org.jboss.seam.security</groupId>
-			    <artifactId>seam-security-api</artifactId>
-			    <version>3.1.0.Final</version>
-		  	</dependency>
-		  	<dependency>
-			    <groupId>org.jboss.seam.security</groupId>
-			    <artifactId>seam-security</artifactId>
-			    <version>3.1.0.Final</version>
-		  	</dependency>
-		   	<dependency>
-			   <groupId>org.jboss.seam.faces</groupId>
-			   <artifactId>seam-faces-api</artifactId>
-			   <version>3.1.0.Final</version>
-			</dependency>
-			<dependency>
-			   <groupId>org.jboss.seam.faces</groupId>
-			   <artifactId>seam-faces</artifactId>
-			   <version>3.1.0.Final</version>
-			</dependency>
-			<dependency>
-	   		   <groupId>com.ocpsoft</groupId>
-			   <artifactId>prettyfaces-jsf2</artifactId>
-			   <version>3.3.3</version>
-			</dependency>
+			
 			
 			<!-- Primefaces -->
 			<dependency>  

@@ -13,6 +13,9 @@
 
 	<modules>
 		<module>core</module>
+		<module>eap63</module>
+		<module>eap71</module>
+		<module>eap72</module>
 	</modules>
 
 	<properties>

@@ -12,7 +12,7 @@
 	<description>Utilities and Helper for JavaEE Developments (JavaEE Support Library)</description>
 
 	<modules>
-		
+		<module>core</module>
 	</modules>
 
 	<properties>

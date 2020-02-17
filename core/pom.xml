@@ -213,12 +213,7 @@
 			   <version>1.0.0.Final</version>
 			   <type>pom</type>
 			</dependency>
-			<dependency>
-				<groupId>org.jboss.arquillian.junit</groupId>
-				<artifactId>arquillian-junit-container</artifactId>
-				<version>1.0.0.CR7</version>
-				<scope>test</scope>
-			</dependency>
+			
 			
 			<!-- Hibernate JBoss AS 7 -->
 			<dependency>
@@ -238,10 +233,7 @@
 	               </exclusion>
 	            </exclusions>
 	         </dependency>
-	        
-            
-			
-			
+	        	
 			<!-- Primefaces -->
 			<dependency>  
 		    	<groupId>org.primefaces</groupId>  
@@ -295,19 +287,18 @@
 				<artifactId>jsf-impl</artifactId>
 				<version>2.1.0</version>
 			</dependency>
-
-			<!-- OmniFaces (copied to MC) -->
-			<dependency>
-			    	<groupId>org.omnifaces</groupId>
-			    	<artifactId>omnifaces</artifactId>
-			    	<version>2.6.4</version>
-			</dependency>
-			
 			<dependency>
 				<groupId>jstl</groupId>
 				<artifactId>jstl</artifactId>
 				<version>1.2</version>
 			</dependency>
+			<dependency> <!-- OmniFaces (copy to MC) -->
+			    	<groupId>org.omnifaces</groupId>
+			    	<artifactId>omnifaces</artifactId>
+			    	<version>2.6.4</version>
+			</dependency>
+			
+
 			
 			<!-- JCR -->
 			<dependency>
@@ -332,6 +323,7 @@
 			</dependency>
         	
 			<!-- JSON -->
+			<!-- JSON https://github.com/FasterXML/jackson-docs/wiki/Using-Jackson2-with-Maven -->
 			<dependency>
 			   <groupId>com.fasterxml.jackson.core</groupId>
 			   <artifactId>jackson-annotations</artifactId>
@@ -433,12 +425,12 @@
 						
 			<!-- Tests -->
 			<dependency>
-  	   		<groupId>junit</groupId>
-  	   		<artifactId>junit</artifactId>
-  	   		<version>4.12</version>
-  	   	</dependency>
+	  	   		<groupId>junit</groupId>
+	  	   		<artifactId>junit</artifactId>
+	  	   		<version>4.12</version>
+	  	   	</dependency>
 			
-			<!-- JSON https://github.com/FasterXML/jackson-docs/wiki/Using-Jackson2-with-Maven -->
+
             <!-- For working with beans e.g. to set properties -->
             <dependency>
                 <groupId>commons-beanutils</groupId>

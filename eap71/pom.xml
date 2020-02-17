@@ -14,6 +14,125 @@
 
 	<dependencyManagement>
 
+		<dependencies>
+		
+			<!-- The following CDI APIs are taken from org.jboss.eap:wildfly-weld:7.1.1.GA-redhat-2 -->      	
+	      	<dependency>
+	      		<groupId>javax.enterprise</groupId>
+	   			<artifactId>cdi-api</artifactId>
+				<version>1.0-SP4</version>
+	      	</dependency>
+	      	
+	      	<!-- The following JPA APIs are taken from org.jboss.eap:wildfly-ee:7.1.1.GA-redhat-2 -->
+			<dependency>
+				<groupId>org.jboss.spec.javax.ejb</groupId>
+				<artifactId>jboss-ejb-api_3.2_spec</artifactId>
+				<version>1.0.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.1-api</artifactId>
+				<version>1.0.0.Final-redhat-2</version>
+			</dependency>
+	      	
+	      	<!-- The following JSF APIs are taken from org.jboss.eap:wildfly-jsf:7.1.1.GA-redhat-2 -->
+			<dependency>
+				<groupId>org.jboss.spec.javax.faces</groupId>
+				<artifactId>jboss-jsf-api_2.2_spec</artifactId>
+				<version>2.2.13.redhat-1</version>
+	  		</dependency>
+	  		<dependency>
+	  			<groupId>org.jboss.spec.javax.servlet</groupId>
+				<artifactId>jboss-servlet-api_3.1_spec</artifactId>
+				<version>1.0.0.Final</version>
+			</dependency>
+			
+			<!-- The following JSX-RS APIs are taken from org.jboss.eap:wildfly-jaxrs:7.1.1.GA-redhat-2 -->
+	  		<dependency>
+	  			<groupId>org.jboss.spec.javax.ws.rs</groupId>
+	  			<artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
+	  			<version>1.0.1.Beta1</version>
+	  		</dependency>
+	  		
+	  		<!-- Versions for PrettyURL updated 2017-08-17 -->
+			<dependency>
+			    <groupId>org.ocpsoft.rewrite</groupId>
+			    <artifactId>rewrite-servlet</artifactId>
+			    <version>3.4.1.Final</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.ocpsoft.rewrite</groupId>
+			    <artifactId>rewrite-config-prettyfaces</artifactId>
+			    <version>3.4.1.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-integration-cdi</artifactId>
+				<version>3.4.1.Final</version>
+			</dependency>
+			
+			<!-- EAP7 Client, the version of hibernate is taken from Module folder in EAP 7.1.1 (required to prevent persistencebag exception) -->
+			<!-- The following APIs are taken from org.jboss.eap:wildfly-weld:7.1.1.GA-redhat-2 -->      	
+			<!--eap723 = <version>5.3.10.Final-redhat-00001</version> -->
+			<dependency>
+			    <groupId>org.jboss.eap</groupId>
+			    <artifactId>wildfly-ejb-client-bom</artifactId>
+			    <version>7.1.1.GA-redhat-2</version>
+			    <type>pom</type>
+			    <scope>test</scope>
+			</dependency>
+			<dependency>
+	            <groupId>org.hibernate</groupId>
+	            <artifactId>hibernate-core</artifactId>
+	            <version>5.1.12.Final</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.hibernate</groupId>
+	            <artifactId>hibernate-spatial</artifactId>
+	            <version>5.1.12.Final</version>
+	        </dependency>
+	        
+			<!-- JSF UI -->
+	   		<dependency>  
+	   			<groupId>org.primefaces</groupId>  
+	   			<artifactId>primefaces</artifactId>
+	   			<version>6.2</version>
+	   		</dependency>
+	        
+	        <!-- JAXB -->
+			<dependency>
+			    <groupId>org.glassfish.jaxb</groupId>
+			    <artifactId>jaxb-runtime</artifactId>
+			    <version>2.2.11</version>
+			</dependency>
+	        
+	        <!-- JSON Jackson -->
+	        <dependency>
+			    <groupId>com.fasterxml.jackson.core</groupId>
+			    <artifactId>jackson-annotations</artifactId>
+			    <version>2.8.11</version>
+			</dependency>
+	        <dependency>
+			    <groupId>com.fasterxml.jackson.core</groupId>
+			    <artifactId>jackson-databind</artifactId>
+			    <version>2.8.11</version>
+			</dependency>
+	        <dependency>
+			    <groupId>com.fasterxml.jackson.core</groupId>
+			    <artifactId>jackson-core</artifactId>
+			    <version>2.8.11</version>
+			</dependency>
+		
+			<!-- Taken from eap63 -->
+			<dependency>
+				<groupId>org.jboss.arquillian.junit</groupId>
+				<artifactId>arquillian-junit-container</artifactId>
+				<version>1.0.0.CR7</version>
+				<scope>test</scope>
+			</dependency>
+			
+		</dependencies>
+
     </dependencyManagement>
     
 	<build>

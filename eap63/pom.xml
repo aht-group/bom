@@ -16,13 +16,14 @@
 		<dependencies>
 		
 
-		
 			<dependency>
 				<groupId>org.jboss.arquillian.junit</groupId>
 				<artifactId>arquillian-junit-container</artifactId>
 				<version>1.0.0.CR7</version>
 				<scope>test</scope>
 			</dependency>
+			
+
 		
 			<!-- SEAM -->
 			<dependency>

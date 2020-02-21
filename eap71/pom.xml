@@ -53,6 +53,28 @@
 	  			<artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
 	  			<version>1.0.1.Beta1</version>
 	  		</dependency>
+	  		<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>jaxrs-api</artifactId>
+				<version>3.0.12.Final</version>
+			</dependency>
+	  		<dependency>
+				<!-- The following JSX-RS versions are taken from org.jboss.eap:wildfly-jaxrs:7.1.1.GA-redhat-2 -->
+				<!--eap723 = <version>3.6.1.SP6-redhat-00001</version> -->
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client</artifactId>
+				<version>3.0.25.Final-redhat-1</version>
+			</dependency>
+			<dependency>
+	       		<groupId>org.jboss.resteasy</groupId>
+	       		<artifactId>resteasy-jaxb-provider</artifactId>
+	       		<version>3.0.25.Final-redhat-1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jackson2-provider</artifactId>
+				<version>3.0.25.Final-redhat-1</version>
+			</dependency>
 	  		
 	  		<!-- Versions for PrettyURL updated 2017-08-17 -->
 			<dependency>

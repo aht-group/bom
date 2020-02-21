@@ -184,7 +184,7 @@
 				<version>5.1.5</version>
 			</dependency>
         	
-			<!-- REST -->
+        	<!-- REST -->
         	<dependency> <!-- This is the bundled version in JBoss-7.1.1 -->
         		<groupId>org.jboss.resteasy</groupId>
         		<artifactId>resteasy-bom</artifactId>
@@ -192,7 +192,7 @@
         		<type>pom</type>
 				<scope>import</scope>
         	</dependency> 
-        
+        	
         	<!-- JBoss -->
         	<dependency>
                 <groupId>org.jboss.as</groupId>

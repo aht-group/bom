@@ -10,7 +10,7 @@
     
     <artifactId>bom-eap72</artifactId>
     <packaging>pom</packaging>
-    <name>JEESL - BOM</name>
+    <name>JEESL - EAP 7.2.7.GA</name>
 
 	<dependencyManagement>
 		<dependencies>
@@ -108,7 +108,7 @@
 	        <dependency>
 	            <groupId>org.hibernate</groupId>
 	            <artifactId>hibernate-spatial</artifactId>
-	            <version>5.3.15.Final-redhat-00001</version>
+	            <version>5.3.15.Final</version>
 	        </dependency>
 	        
 			<!-- JSF UI -->
@@ -148,6 +148,18 @@
 				<artifactId>arquillian-junit-container</artifactId>
 				<version>1.0.0.CR7</version>
 				<scope>test</scope>
+			</dependency>
+			
+			<!-- Database -->
+			<dependency>
+			    <groupId>org.postgresql</groupId>
+			    <artifactId>postgresql</artifactId>
+			    <version>42.2.14</version>
+			</dependency>
+			<dependency>
+				<groupId>net.postgis</groupId>
+				<artifactId>postgis-jdbc</artifactId>
+				<version>2.5.0</version>
 			</dependency>
 			
 		</dependencies>

@@ -412,7 +412,7 @@
 			<dependency>
    		 		<groupId>com.aspose</groupId>
 				<artifactId>aspose-words</artifactId>
-				<version>20.6</version><!-- Our certificate should include v20.8 / We should test newer versions as long as it works! -->
+				<version>20.8</version><!-- Our certificate should include v20.8 / We should test newer versions as long as it works! -->
     			<classifier>jdk17</classifier>
 			</dependency>
 			

@@ -68,7 +68,7 @@
 				<!--eap723 = <version>3.6.1.SP6-redhat-00001</version> -->
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-client</artifactId>
-				<version>3.0.25.Final-redhat-1</version>
+				<version>4.5.6.Final-redhat-00004</version>
 			</dependency>
 			<dependency>
 	       		<groupId>org.jboss.resteasy</groupId>

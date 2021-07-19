@@ -67,7 +67,6 @@
 		<version.io.smallrye.opentracing>1.3.4.redhat-00004</version.io.smallrye.opentracing>
 		<version.io.undertow.jastow>2.0.8.Final-redhat-00001</version.io.undertow.jastow>
 		<version.io.undertow.js>1.0.2.Final-redhat-1</version.io.undertow.js>
-		<version.jakarta.enterprise>2.0.2.redhat-00002</version.jakarta.enterprise>
 		<version.jakarta.json.bind.api>1.0.2.redhat-00001</version.jakarta.json.bind.api>
 		<version.jakarta.mail>1.6.4.redhat-00001</version.jakarta.mail>
 		<version.jakarta.persistence>2.2.3.redhat-00001</version.jakarta.persistence>
@@ -164,7 +163,9 @@
 			artifactId contains the API spec version -->
 		<version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.3_spec>2.0.1.Final-redhat-00001</version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.3_spec>
 		<version.org.jboss.spec.javax.batch.jboss-batch-api_1.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.batch.jboss-batch-api_1.0_spec>
-		<version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec>
+		
+		
+		
 		<version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>
 		<version.org.jboss.spec.javax.enterprise.concurrent.jboss-concurrency-api_1.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.enterprise.concurrent.jboss-concurrency-api_1.0_spec>
 		<version.org.jboss.spec.javax.faces.jboss-jsf-api_2.3_spec>3.0.0.SP04-redhat-00001</version.org.jboss.spec.javax.faces.jboss-jsf-api_2.3_spec>
@@ -215,6 +216,7 @@
 		<version.rhino.js>1.7R2</version.rhino.js>
 		<version.sun.jaxb>2.3.3.b02-redhat-00001</version.sun.jaxb>
 		<version.sun.saaj-impl>1.4.1.SP1-redhat-00001</version.sun.saaj-impl>
+		
 		<!-- This version is also hard-coded in feature-pack/src/main/resources/modules/system/layers/base/com/sun/xml/messaging/saaj/main/module.xml. 
 			If the version here changes the hard-coded version must change as well. -->
 		<version.sun.saaj-impl-1.3>1.3.16.SP1-redhat-6</version.sun.saaj-impl-1.3>
@@ -226,24 +228,30 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- This is the BOM fro EAP 7.3.4 -->
+			<dependency>
+			    <groupId>org.jboss.bom</groupId>
+			    <artifactId>jboss-eap-jakartaee8</artifactId>
+			    <version>7.3.4.GA</version>
+			    <type>pom</type>
+			    <scope>import</scope>
+			</dependency>
+			
+			<!-- Taken from mopwh, needs to be aligned with EAP 7.3.4 -->
+			<dependency>
+				<groupId>org.eclipse.microprofile.metrics</groupId>
+				<artifactId>microprofile-metrics-api</artifactId>
+				<version>2.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+		
 			<!-- The following versions taken from jboss.eap-7.3.4.GA -->
-
 			<dependency>
 				<groupId>org.hibernate.javax.persistence</groupId>
 				<artifactId>hibernate-jpa-2.1-api</artifactId>
 				<version>1.0.2.Final</version>
 			</dependency>
 
-			<dependency>
-				<groupId>jakarta.enterprise</groupId>
-				<artifactId>jakarta.enterprise.cdi-api</artifactId>
-				<version>${version.jakarta.enterprise}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.spec.javax.ejb</groupId>
-				<artifactId>jboss-ejb-api_3.2_spec</artifactId>
-				<version>${version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec}</version>
-			</dependency>
 			<dependency>
 				<groupId>org.jboss.spec.javax.el</groupId>
 				<artifactId>jboss-el-api_3.0_spec</artifactId>
@@ -258,11 +266,6 @@
 				<groupId>org.jboss.spec.javax.servlet</groupId>
 				<artifactId>jboss-servlet-api_4.0_spec</artifactId>
 				<version>${version.org.jboss.spec.javax.servlet.jboss-servlet-api_4.0_spec}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.spec.javax.ws.rs</groupId>
-				<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
-				<version>${version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.1_spec}</version>
 			</dependency>
 
 			<!-- Resteasy -->

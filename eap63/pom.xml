@@ -10,7 +10,7 @@
     
     <artifactId>bom-eap63</artifactId>
     <packaging>pom</packaging>
-    <name>JEESL - BOM</name>
+    <name>JEESL BOM - EAP 6.3.3</name>
 
 	<dependencyManagement>
 		<dependencies>

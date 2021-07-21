@@ -10,7 +10,7 @@
     
     <artifactId>bom-eap71</artifactId>
     <packaging>pom</packaging>
-    <name>JEESL - BOM</name>
+    <name>JEESL BOM - EAP 7.1.1</name>
 
 	<dependencyManagement>
 
@@ -46,6 +46,13 @@
 				<artifactId>jboss-servlet-api_3.1_spec</artifactId>
 				<version>1.0.0.Final</version>
 			</dependency>
+			<dependency>
+				<!-- Guessed from EAP 7.2x -->
+				<groupId>org.jboss.spec.javax.ws.rs</groupId>
+				<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+				<version>1.0.3.Final-redhat-00001</version>
+			</dependency>
+			
 			
 			<!-- The following JSX-RS APIs are taken from org.jboss.eap:wildfly-jaxrs:7.1.1.GA-redhat-2 -->
 	  		<dependency>
@@ -65,7 +72,6 @@
 			</dependency>
 	  		<dependency>
 				<!-- The following JSX-RS versions are taken from org.jboss.eap:wildfly-jaxrs:7.1.1.GA-redhat-2 -->
-				<!--eap723 = <version>3.6.1.SP6-redhat-00001</version> -->
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-client</artifactId>
 				<version>3.0.25.Final-redhat-1</version>
@@ -100,7 +106,6 @@
 			
 			<!-- EAP7 Client, the version of hibernate is taken from Module folder in EAP 7.1.1 (required to prevent persistencebag exception) -->
 			<!-- The following APIs are taken from org.jboss.eap:wildfly-weld:7.1.1.GA-redhat-2 -->      	
-			<!--eap723 = <version>5.3.10.Final-redhat-00001</version> -->
 			<dependency>
 			    <groupId>org.jboss.eap</groupId>
 			    <artifactId>wildfly-ejb-client-bom</artifactId>
@@ -115,6 +120,11 @@
 	        <dependency>
 	            <groupId>org.hibernate</groupId>
 	            <artifactId>hibernate-spatial</artifactId>
+	            <version>5.1.12.Final</version>
+	        </dependency>
+	       	<dependency>
+	            <groupId>org.hibernate</groupId>
+	            <artifactId>hibernate-envers</artifactId>
 	            <version>5.1.12.Final</version>
 	        </dependency>
 	        

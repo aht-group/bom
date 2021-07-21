@@ -12,7 +12,7 @@
 
 	<artifactId>bom-eap73</artifactId>
 	<packaging>pom</packaging>
-	<name>JEESL - EAP 7.3.4.GA</name>
+	<name>JEESL BOM - EAP 7.3.4</name>
 	
     <!-- Versions from EAP Source (need to clean up un-used!) -->
 	<properties>

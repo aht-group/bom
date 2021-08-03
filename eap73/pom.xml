@@ -71,7 +71,6 @@
 		<version.jakarta.mail>1.6.4.redhat-00001</version.jakarta.mail>
 		<version.jakarta.persistence>2.2.3.redhat-00001</version.jakarta.persistence>
 		<version.jakarta.security.enterprise>1.0.2.redhat-00001</version.jakarta.security.enterprise>
-		<version.jakarta.validation>2.0.2.redhat-00001</version.jakarta.validation>
 		<version.javax.jws.jsr181-api>1.0.0.MR1-redhat-8</version.javax.jws.jsr181-api>
 		<version.jaxen>1.1.6.redhat-2</version.jaxen>
 		<version.jboss.jaxbintros>1.0.3.GA-redhat-00001</version.jboss.jaxbintros>
@@ -245,7 +244,13 @@
 				<scope>provided</scope>
 			</dependency>
 		
-			<!-- The following versions taken from jboss.eap-7.3.4.GA -->
+			<!-- Jakarta EE -->
+			<dependency>
+				<groupId>jakarta.validation</groupId>
+				<artifactId>jakarta.validation-api</artifactId>
+				<version>2.0.2.redhat-00001</version>
+			</dependency>
+			
 			<dependency>
 				<groupId>org.hibernate.javax.persistence</groupId>
 				<artifactId>hibernate-jpa-2.1-api</artifactId>

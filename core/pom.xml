@@ -109,6 +109,11 @@
         		<artifactId>jeesl-monitor</artifactId>
         		<version>${project.version}</version>
         	</dependency>
+			<dependency>
+        		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-io-locale</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
 		    
 		    <!-- Manages BOMs -->
 		    <dependency>

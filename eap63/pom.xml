@@ -22,8 +22,19 @@
 				<scope>test</scope>
 			</dependency>
 			
+			<!-- Hibernate -->
+			<dependency>
+		      	<groupId>org.hibernate</groupId>
+		      	<artifactId>hibernate-envers</artifactId>
+		      	<version>5.3.18.Final</version>
+			</dependency>
+			<dependency>
+	            <groupId>org.hibernate</groupId>
+	            <artifactId>hibernate-entitymanager</artifactId>
+	            <version>5.3.18.Final</version>
+	        </dependency>
 
-		
+
 			<!-- SEAM -->
 			<dependency>
 	   			<groupId>org.jboss.solder</groupId>

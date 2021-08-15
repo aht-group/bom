@@ -34,7 +34,6 @@
 	            <version>5.3.18.Final</version>
 	        </dependency>
 
-
 			<!-- SEAM -->
 			<dependency>
 	   			<groupId>org.jboss.solder</groupId>
@@ -81,7 +80,7 @@
 			   <artifactId>prettyfaces-jsf2</artifactId>
 			   <version>3.3.3</version>
 			</dependency>
-	         
+				         
 		</dependencies>
     </dependencyManagement>
     

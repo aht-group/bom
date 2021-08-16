@@ -16,7 +16,7 @@
 	
 	<dependencyManagement>
 		<dependencies>
-			<!-- The following versions taken from jboss.eap-7.2.7.GA -->
+
 			<dependency>
 				<groupId>javax.enterprise</groupId>
 				<artifactId>cdi-api</artifactId>
@@ -84,7 +84,7 @@
 				<version>3.6.1.SP7-redhat-00001</version>
 			</dependency>
 
-			<!-- Versions for PrettyURL updated 2017-08-17 -->
+			<!-- Rewrite -->
 			<dependency>
 				<groupId>org.ocpsoft.rewrite</groupId>
 				<artifactId>rewrite-servlet</artifactId>

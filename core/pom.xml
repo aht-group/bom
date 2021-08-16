@@ -206,7 +206,7 @@
                 <type>pom</type>
             </dependency>
             
-            
+            <!--  -->
             <dependency>
 	            <groupId>org.jboss.spec</groupId>
 	            <artifactId>jboss-javaee-web-6.0</artifactId>

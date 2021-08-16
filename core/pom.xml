@@ -157,6 +157,13 @@
 				<artifactId>metachart-doc</artifactId>
 				<version>0.0.3-SNAPSHOT</version>
 			</dependency>
+			
+			<!-- Jakarta EE -->
+			<dependency>
+    			<groupId>jakarta.inject</groupId>
+    			<artifactId>jakarta.inject-api</artifactId>
+				<version>1.0</version>
+			</dependency>
 		    
 		    <!-- Mail -->
 		    <dependency>
@@ -215,7 +222,7 @@
 	            <scope>import</scope>
 	         </dependency>
 	         
-	         <!--  -->
+			<!--  -->
             <dependency>
 			   <groupId>org.jboss.spec</groupId>
 			   <artifactId>jboss-javaee-6.0</artifactId>

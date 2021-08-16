@@ -125,7 +125,7 @@
 		<version.org.jboss.spec.javax.servlet.jsp.jboss-jsp-api_2.3_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.servlet.jsp.jboss-jsp-api_2.3_spec>
 		<version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.3_spec>2.0.0.Final-redhat-00002</version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.3_spec>
 		<version.org.jboss.spec.javax.websockets>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.websockets>
-		<version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.1_spec>2.0.1.Final-redhat-00001</version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.1_spec>
+		
 		<version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>1.0.1.Final-redhat-1</version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>
 		<version.org.jboss.spec.javax.xml.rpc.jboss-jaxrpc-api_1.1_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.xml.rpc.jboss-jaxrpc-api_1.1_spec>
 		<version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.3_spec>1.0.6.Final-redhat-1</version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.3_spec>
@@ -368,12 +368,7 @@
 						<groupId>javax.annotation</groupId>
 						<artifactId>jsr250-api</artifactId>
 					</exclusion>
-					<!-- TODO remove this exclusion once this supports Jakarta Validation -->
-					<!-- Superceded by jakarta.validation:jakarta.validation-api -->
-					<exclusion>
-						<groupId>javax.validation</groupId>
-						<artifactId>validation-api</artifactId>
-					</exclusion>
+					
 					<!-- TODO remove this exclusion once this supports Jakarta Activation -->
 					<!-- Superceded by com.sun.activation:jakarta.activation -->
 					<exclusion>

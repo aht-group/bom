@@ -220,7 +220,7 @@
 	            <version>2.0.0.Final</version>
 	            <type>pom</type>
 	            <scope>import</scope>
-	         </dependency>
+	         </dependency> 
 	         
 			<!--  -->
             <dependency>
@@ -230,28 +230,12 @@
 			   <type>pom</type>
 			</dependency>
 			
-			
 			<!-- Hibernate JBoss AS 7 -->
 			<dependency>
         		<groupId>org.hibernate</groupId>
         		<artifactId>hibernate-core</artifactId>
         		<version>4.0.1.Final</version>
         	</dependency>
-        	
-        	<!-- 
-	        <dependency>
-	            <groupId>org.hibernate</groupId>
-	            <artifactId>hibernate-validator</artifactId>
-	            <version>4.1.0.Final</version>
-	            <scope>provided</scope>
-	            <exclusions>
-	               <exclusion>
-	                  <groupId>org.slf4j</groupId>
-	                  <artifactId>slf4j-api</artifactId>
-	               </exclusion>
-	            </exclusions>
-	         </dependency>
-	         -->
 	        	
 			<!-- Primefaces -->
 			<dependency>  

@@ -17,7 +17,7 @@
 	<properties>
 		<version.com.fasterxml.jackson>2.10.4.redhat-00002</version.com.fasterxml.jackson>
 		<version.org.hibernate>5.3.18.Final-redhat-00002</version.org.hibernate>
-		<version.org.jboss.resteasy>3.11.2.Final-redhat-00002</version.org.jboss.resteasy>
+		<version.org.jboss.resteasy>4.5.6.Final-redhat-00004</version.org.jboss.resteasy>
 	</properties>
 
 	<dependencyManagement>

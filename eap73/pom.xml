@@ -14,93 +14,10 @@
 	<packaging>pom</packaging>
 	<name>JEESL BOM - EAP 7.3.4</name>
 	
-    <!-- Versions from EAP Source (need to clean up un-used!) -->
 	<properties>
 		<version.com.fasterxml.jackson>2.10.4.redhat-00002</version.com.fasterxml.jackson>
-		
-
-		<version.jakarta.json.bind.api>1.0.2.redhat-00001</version.jakarta.json.bind.api>
-
-		<version.jaxen>1.1.6.redhat-2</version.jaxen>
-		
-		
-		<version.org.apache.activemq.artemis>2.9.0.redhat-00016</version.org.apache.activemq.artemis>
-		<version.org.apache.activemq.artemis.native>1.0.2.redhat-00001</version.org.apache.activemq.artemis.native>
-		<version.org.apache.activemq.libartemis.native>1.0.2-redhat-1</version.org.apache.activemq.libartemis.native>
-
-		<version.org.apache.xalan>2.7.1.redhat-12</version.org.apache.xalan>
-		
-
-		<version.org.codehaus.jackson>1.9.13.redhat-00007</version.org.codehaus.jackson>
-		<version.org.codehaus.jettison>1.4.0.redhat-00001</version.org.codehaus.jettison>
-		
-		<version.org.eclipse.jdt.core.compiler>4.6.1.redhat-1</version.org.eclipse.jdt.core.compiler>
-		<version.org.eclipse.microprofile.config.api>1.4.0.redhat-00003</version.org.eclipse.microprofile.config.api>
-		<version.org.eclipse.microprofile.fault-tolerance.api>2.1.1.redhat-00003</version.org.eclipse.microprofile.fault-tolerance.api>
-		<version.org.eclipse.microprofile.health.api>2.2.0.redhat-00001</version.org.eclipse.microprofile.health.api>
-		<version.org.eclipse.microprofile.jwt.api>1.1.1.redhat-00007</version.org.eclipse.microprofile.jwt.api>
-		<version.org.eclipse.microprofile.metrics.api>2.3.0.redhat-00001</version.org.eclipse.microprofile.metrics.api>
-		<version.org.eclipse.microprofile.openapi.api>1.1.2.redhat-00003</version.org.eclipse.microprofile.openapi.api>
-		<version.org.eclipse.microprofile.opentracing>1.3.3.redhat-00001</version.org.eclipse.microprofile.opentracing>
-		<version.org.eclipse.microprofile.rest.client.api>1.4.0.redhat-00004</version.org.eclipse.microprofile.rest.client.api>
-		
-		
-
 		<version.org.hibernate>5.3.18.Final-redhat-00002</version.org.hibernate>
-		<version.org.hibernate.commons.annotations>5.0.5.Final-redhat-00002</version.org.hibernate.commons.annotations>
-		<version.org.hibernate.search>5.10.7.Final-redhat-00001</version.org.hibernate.search>
-
-		
-		
-		
-		<version.org.jboss.activemq.artemis.integration>1.0.2.redhat-1</version.org.jboss.activemq.artemis.integration>
-		<version.org.jboss.arquillian.core>1.4.0.Final</version.org.jboss.arquillian.core>
-		<version.org.jboss.arquillian.testng>1.1.13.Final</version.org.jboss.arquillian.testng>
-		
-
-		<!-- Only used for testing -->
 		<version.org.jboss.resteasy>3.11.2.Final-redhat-00002</version.org.jboss.resteasy>
-		<version.org.jboss.seam.int>7.0.0.GA-redhat-2</version.org.jboss.seam.int>
-		<version.org.jboss.security.jboss-negotiation>3.0.6.Final-redhat-00001</version.org.jboss.security.jboss-negotiation>
-		<version.org.jboss.security.jbossxacml>2.0.8.Final-redhat-8</version.org.jboss.security.jbossxacml>
-		<!-- only needed here until wildfly-arquillian has this version properly 
-			synced with arquillian itslef -->
-		<version.org.jboss.shrinkwrap.descriptors>2.0.0</version.org.jboss.shrinkwrap.descriptors>
-		<version.org.jboss.shrinkwrap.shrinkwrap>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap>
-		<!-- Include the artifactId for org.jboss.spec project versions because 
-			artifactId contains the API spec version -->
-		<version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.3_spec>2.0.1.Final-redhat-00001</version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.3_spec>
-		<version.org.jboss.spec.javax.batch.jboss-batch-api_1.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.batch.jboss-batch-api_1.0_spec>
-		
-		
-		
-		<version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>
-		<version.org.jboss.spec.javax.enterprise.concurrent.jboss-concurrency-api_1.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.enterprise.concurrent.jboss-concurrency-api_1.0_spec>
-		<version.org.jboss.spec.javax.jms.jboss-jms-api_2.0_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.jms.jboss-jms-api_2.0_spec>
-		<version.org.jboss.spec.javax.management.j2ee.jboss-j2eemgmt-api_1.1_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.management.j2ee.jboss-j2eemgmt-api_1.1_spec>
-		<version.org.jboss.spec.javax.resource.jboss-connector-api_1.7_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.resource.jboss-connector-api_1.7_spec>
-		
-	<version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.3_spec>2.0.0.Final-redhat-00002</version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.3_spec>
-		<version.org.jboss.spec.javax.websockets>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.websockets>
-		
-		<version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>1.0.1.Final-redhat-1</version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>
-		<version.org.jboss.spec.javax.xml.rpc.jboss-jaxrpc-api_1.1_spec>2.0.0.Final-redhat-00001</version.org.jboss.spec.javax.xml.rpc.jboss-jaxrpc-api_1.1_spec>
-		<version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.3_spec>1.0.6.Final-redhat-1</version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.3_spec>
-		<version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.4_spec>1.0.1.Final-redhat-00001</version.org.jboss.spec.javax.xml.soap.jboss-saaj-api_1.4_spec>
-		<version.org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec>1.0.0.Final-redhat-1</version.org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec>
-		
-		
-		<version.org.reactivestreams>1.0.2.redhat-1</version.org.reactivestreams>
-
-		<version.org.wildfly.arquillian>2.2.0.Final</version.org.wildfly.arquillian>
-		<version.org.wildfly.core>10.1.15.Final-redhat-00001</version.org.wildfly.core>
-		<version.org.wildfly.extras.creaper>1.6.1</version.org.wildfly.extras.creaper>
-		<version.org.wildfly.http-client>1.0.22.Final-redhat-00001</version.org.wildfly.http-client>
-		<version.org.wildfly.transaction.client>1.1.13.Final-redhat-00001</version.org.wildfly.transaction.client>
-
-		<version.sun.jaxb>2.3.3.b02-redhat-00001</version.sun.jaxb>
-		
-
 	</properties>
 
 	<dependencyManagement>
@@ -146,7 +63,7 @@
 			<dependency>
 				<groupId>org.jboss.spec.javax.el</groupId>
 				<artifactId>jboss-el-api_3.0_spec</artifactId>
-				<version>${version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec}</version>
+				<version>2.0.0.Final-redhat-00001</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.spec.javax.faces</groupId>
@@ -160,38 +77,6 @@
 			</dependency>
 
 			<!-- Resteasy -->
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-atom-provider</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>com.sun.xml.bind</groupId>
-						<artifactId>jaxb-impl</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-cdi</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.jboss.resteasy</groupId>
-						<artifactId>jaxrs-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-					<!-- TODO remove this exclusion once this supports Jakarta Validation -->
-					<!-- Superceded by jakarta.validation:jakarta.validation-api -->
-				</exclusions>
-			</dependency>
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-client</artifactId>
@@ -277,12 +162,6 @@
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-jaxb-provider</artifactId>
 				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>*</groupId>
-						<artifactId>*</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
@@ -336,36 +215,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-jettison-provider</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-jsapi</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.jboss.spec.javax.ws.rs</groupId>
-						<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.resteasy</groupId>
-						<artifactId>jaxrs-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-json-binding-provider</artifactId>
 				<version>${version.org.jboss.resteasy}</version>
 				<exclusions>
@@ -386,42 +235,6 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-multipart-provider</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>javax.servlet</groupId>
-						<artifactId>servlet-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>com.sun.mail</groupId>
-						<artifactId>javax.mail</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			
-			<dependency>
-				<groupId>org.jboss.resteasy</groupId>
-				<artifactId>resteasy-validator-provider</artifactId>
-				<version>${version.org.jboss.resteasy}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.jboss.weld.se</groupId>
-						<artifactId>weld-se</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.jboss.logging</groupId>
-						<artifactId>jboss-logging</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-
 
 			<!-- Rewrite (2017-08-17) -->
 			<dependency>
@@ -447,6 +260,14 @@
 				<version>7.3.4.GA</version>
 				<type>pom</type>
 			</dependency>
+			
+			<!-- Arquillian (taken from eap63) -->
+			<dependency>
+				<groupId>org.jboss.arquillian.junit</groupId>
+				<artifactId>arquillian-junit-container</artifactId>
+				<version>1.0.0.CR7</version>
+				<scope>test</scope>
+			</dependency> 
 
 			<!-- Hibernate -->
 			<dependency>
@@ -533,7 +354,7 @@
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
 				<artifactId>jaxb-runtime</artifactId>
-				<version>${version.sun.jaxb}</version>
+				<version>2.3.3.b02-redhat-00001</version>
 			</dependency>
 
 			<!-- JSON Jackson -->
@@ -556,14 +377,6 @@
 				<groupId>com.fasterxml.jackson.jaxrs</groupId>
     			<artifactId>jackson-jaxrs-json-provider</artifactId>
 				<version>${version.com.fasterxml.jackson}</version>
-			</dependency>
-
-			<!-- Taken from eap63 -->
-			<dependency>
-				<groupId>org.jboss.arquillian.junit</groupId>
-				<artifactId>arquillian-junit-container</artifactId>
-				<version>1.0.0.CR7</version>
-				<scope>test</scope>
 			</dependency>
 
 			<!-- Database -->

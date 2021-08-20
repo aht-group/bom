@@ -164,6 +164,13 @@
     			<artifactId>jakarta.inject-api</artifactId>
 				<version>1.0</version>
 			</dependency>
+			
+			<!-- Caching, not part of JakartaEE -->
+			<dependency>
+				<groupId>javax.cache</groupId>
+				<artifactId>cache-api</artifactId>
+				<version>1.1.1</version>
+			</dependency>
 		    
 		    <!-- Mail -->
 		    <dependency>

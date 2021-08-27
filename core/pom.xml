@@ -195,6 +195,11 @@
         		<artifactId>poi-ooxml</artifactId>
         		<version>3.17</version> 
         	</dependency>
+        	<dependency>
+				<groupId>com.monitorjbl</groupId>
+				<artifactId>xlsx-streamer</artifactId>
+				<version>1.2.1</version>
+			</dependency>
         	
         	<!-- Google App Engine -->
 			<dependency>

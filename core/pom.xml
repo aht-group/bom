@@ -313,8 +313,6 @@
 				<version>2.6.4</version>
 			</dependency>
 			
-
-			
 			<!-- JCR -->
 			<dependency>
 				<groupId>org.apache.jackrabbit</groupId>
@@ -452,6 +450,18 @@
                 <artifactId>commons-beanutils</artifactId>
                 <version>1.9.0</version>
             </dependency>
+            
+            <!-- E-Mail, api bundled with commons-email -->
+            <dependency>
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-email</artifactId>
+			    <version>1.5</version>
+			</dependency>
+			<dependency>
+	    		<groupId>javax.mail</groupId>
+	    		<artifactId>javax.mail-api</artifactId>
+	    		<version>1.5.6</version>
+			</dependency>
         </dependencies>
     </dependencyManagement>
     

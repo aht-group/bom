@@ -252,6 +252,13 @@
 				<artifactId>rewrite-integration-cdi</artifactId>
 				<version>3.4.1.Final</version>
 			</dependency>
+			
+			<!-- Caches -->
+			<dependency>
+				<groupId>com.github.ben-manes.caffeine</groupId>
+				<artifactId>caffeine</artifactId>
+				<version>2.8.4</version>
+			</dependency>
 
 			<!-- Wildfly -->
 			<dependency>

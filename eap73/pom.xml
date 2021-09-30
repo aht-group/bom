@@ -253,7 +253,17 @@
 				<version>3.4.1.Final</version>
 			</dependency>
 			
-			<!-- Caches -->
+			<!-- Infinispan, the version of caffeine needs to be aligned with infinispan -->
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-cdi-embedded</artifactId>
+				<version>12.1.7.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-jcache</artifactId>
+				<version>12.1.7.Final</version>
+			</dependency>
 			<dependency>
 				<groupId>com.github.ben-manes.caffeine</groupId>
 				<artifactId>caffeine</artifactId>

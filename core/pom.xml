@@ -442,6 +442,13 @@
 	  	   		<artifactId>junit</artifactId>
 	  	   		<version>4.12</version>
 	  	   	</dependency>
+	  	   	
+			<!-- Database -->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>42.2.18</version>
+			</dependency>
 			
 
             <!-- For working with beans e.g. to set properties -->

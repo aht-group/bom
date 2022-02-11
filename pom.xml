@@ -5,7 +5,7 @@
 	<groupId>org.jeesl.bom</groupId>
 	<artifactId>bom</artifactId>
 	<packaging>pom</packaging>
-	<version>0.2.6-SNAPSHOT</version>
+	<version>0.2.6</version>
     
 	<name>JEESL (JavaEE Support Library) BOM</name>
 	<url>https://github.com/aht-group/bom</url>
@@ -42,7 +42,8 @@
 		<url>https://github.com/aht-group/bom.git</url>
 		<connection>scm:git:ssh://git@github.com/aht-group/bom.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/aht-group/bom.git</developerConnection>
-	</scm>
+	  <tag>bom-0.2.6</tag>
+  </scm>
 	
 	<developers>
 		<developer>

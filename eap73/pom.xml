@@ -380,6 +380,16 @@
 				<artifactId>font-awesome</artifactId>
 				<version>5.12.0</version>
 			</dependency>
+			<dependency>
+		    	<groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+		    	<artifactId>owasp-java-html-sanitizer</artifactId>
+				<version>20191001.1</version>
+			</dependency>
+			<dependency>
+				<groupId>nl.captcha</groupId>
+				<artifactId>simplecaptcha</artifactId>
+				<version>1.2.1</version>
+			</dependency>
 
 			<!-- JAXB -->
 			<dependency>

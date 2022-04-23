@@ -184,12 +184,6 @@
 				<scope>test</scope>
 			</dependency>
 
-			<!-- Database -->
-			<dependency>
-				<groupId>org.postgresql</groupId>
-				<artifactId>postgresql</artifactId>
-				<version>42.2.14</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

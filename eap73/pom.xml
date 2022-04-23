@@ -14,7 +14,6 @@
 	
 	<properties>
 		<version.com.fasterxml.jackson>2.10.4.redhat-00002</version.com.fasterxml.jackson>
-		<version.org.hibernate>5.3.18.Final-redhat-00002</version.org.hibernate>
 		<version.org.jboss.resteasy>3.11.2.Final-redhat-00002</version.org.jboss.resteasy>
 	</properties>
 
@@ -297,7 +296,7 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>${version.org.hibernate}</version>
+				<version>5.3.18.Final</version>
 				<exclusions>
 					<exclusion>
 						<groupId>com.fasterxml</groupId>
@@ -360,6 +359,12 @@
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-spatial</artifactId>
 				<version>5.3.18.Final</version>
+			</dependency>
+			<dependency>
+				<!-- This lib is required for JSON PG Types, unfortunaltely JB 7.3.4 has 5.0.5 bundled -->
+				<groupId>org.hibernate.common</groupId>
+				<artifactId>hibernate-commons-annotations</artifactId>
+				<version>5.1.0.Final</version>
 			</dependency>
 
 			<!-- Primefaces -->

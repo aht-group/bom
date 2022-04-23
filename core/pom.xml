@@ -119,7 +119,7 @@
 		    <dependency>
     	   		<groupId>net.sf.exlp</groupId>
     	   		<artifactId>exlp-bom</artifactId>
-    	   		<version>0.1.14</version>
+    	   		<version>0.1.15-SNAPSHOT</version>
     	   		<type>pom</type>
 				<scope>import</scope>
     	   	</dependency>

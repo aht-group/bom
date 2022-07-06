@@ -74,7 +74,7 @@
 				<!-- The following JSX-RS versions are taken from org.jboss.eap:wildfly-jaxrs:7.1.1.GA-redhat-2 -->
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-client</artifactId>
-				<version>3.0.25.Final-redhat-1</version>
+				<version>3.14.0.Final</version>
 			</dependency>
 			<dependency>
 	       		<groupId>org.jboss.resteasy</groupId>

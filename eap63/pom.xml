@@ -60,6 +60,11 @@
 				<artifactId>el-api</artifactId>
 				<version>2.2</version>
 			</dependency>
+			<dependency> <!-- OmniFaces (copy to MC) -->
+				<groupId>org.omnifaces</groupId>
+				<artifactId>omnifaces</artifactId>
+				<version>2.6.4</version>
+			</dependency>
 
 			<!-- SEAM -->
 			<dependency>

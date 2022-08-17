@@ -367,11 +367,16 @@
 				<version>5.1.0.Final</version>
 			</dependency>
 
-			<!-- Primefaces -->
+			<!-- JSF -->
 			<dependency>
 				<groupId>org.primefaces</groupId>
 				<artifactId>primefaces</artifactId>
 				<version>8.0</version>
+			</dependency>
+			<dependency> <!-- OmniFaces (copy to MC) -->
+				<groupId>org.omnifaces</groupId>
+				<artifactId>omnifaces</artifactId>
+				<version>3.0</version>
 			</dependency>
 			
 			<!-- HTML Utils -->

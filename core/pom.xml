@@ -455,13 +455,19 @@
 				<version>8.0.28</version> <!-- Update version in JbossModuleConfigurator !! (previous: 8.0.15-->
 			</dependency>
 			
-
             <!-- For working with beans e.g. to set properties -->
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>1.9.4</version> <!-- Updated from 1.9.0 on 2022-04-24 by tk -->
             </dependency>
+            
+           	<!-- Classe Structures -->
+			<dependency>
+				<groupId>io.github.classgraph</groupId>
+				<artifactId>classgraph</artifactId>
+				<version>4.8.149</version>
+			</dependency>
             
             <!-- E-Mail, api bundled with commons-email -->
             <dependency>

@@ -447,7 +447,7 @@
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
-				<version>42.3.4</version>	<!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
+				<version>42.3.7</version>	<!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
 			</dependency>
 			<dependency>
 				<groupId>mysql</groupId>

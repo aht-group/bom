@@ -462,7 +462,7 @@
                 <version>1.9.4</version> <!-- Updated from 1.9.0 on 2022-04-24 by tk -->
             </dependency>
             
-           	<!-- Classe Structures -->
+           	<!-- Class Structures -->
 			<dependency>
 				<groupId>io.github.classgraph</groupId>
 				<artifactId>classgraph</artifactId>

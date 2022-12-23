@@ -183,6 +183,13 @@
 				<artifactId>mail</artifactId>
 				<version>1.4.5</version>
 			</dependency>
+			
+			<!-- JODA Time -->
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>2.10.5</version>
+			</dependency> 
         	
         	<!-- Apache POI -->
         	<dependency>
@@ -248,6 +255,8 @@
         		<artifactId>hibernate-core</artifactId>
         		<version>4.0.1.Final</version>
         	</dependency>
+        	
+        	
 	        	
 			<!-- Primefaces -->
 			<dependency>  

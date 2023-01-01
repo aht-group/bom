@@ -109,9 +109,16 @@
         		<artifactId>jeesl-monitor</artifactId>
         		<version>${project.version}</version>
         	</dependency>
+        	
+        	<!-- JEESL Modules -->
 			<dependency>
         		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-io-locale</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-system-security</artifactId>
         		<version>${project.version}</version>
         	</dependency>
 		    

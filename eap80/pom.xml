@@ -23,9 +23,8 @@
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
-				<version>42.5.1</version>	<!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
-			</dependency>
-			
+				<version>42.5.1</version> <!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
+			</dependency>			
 
 		</dependencies>
 	</dependencyManagement>

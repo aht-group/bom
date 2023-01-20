@@ -17,6 +17,7 @@
 		<module>eap71</module>
 		<module>eap72</module>
 		<module>eap73</module>
+		<module>eap80</module>
 	</modules>
 
 	<properties>

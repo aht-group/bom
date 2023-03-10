@@ -118,6 +118,11 @@
         	</dependency>
         	<dependency>
         		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-io-cms</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-io-mail</artifactId>
         		<version>${project.version}</version>
         	</dependency>

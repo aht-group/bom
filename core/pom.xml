@@ -27,6 +27,16 @@
 				<version>${project.version}</version>
 				<classifier>sources</classifier>
 			</dependency>
+			<dependency>
+				<groupId>org.jeesl</groupId>
+				<artifactId>jeesl-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jeesl</groupId>
+				<artifactId>jeesl-cycle</artifactId>
+				<version>${project.version}</version>
+			</dependency>
         	<dependency>
 				<groupId>org.jeesl</groupId>
 				<artifactId>jeesl-xml</artifactId>
@@ -48,11 +58,7 @@
 				<artifactId>jeesl-ejb</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jeesl</groupId>
-				<artifactId>jeesl-client</artifactId>
-				<version>${project.version}</version>
-			</dependency>
+			
 			<dependency>
 				<groupId>org.jeesl</groupId>
 				<artifactId>jeesl-interfaces</artifactId>

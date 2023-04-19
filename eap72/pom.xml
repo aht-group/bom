@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jeesl.bom</groupId>
 		<artifactId>bom</artifactId>
-		<version>0.3.1-SNAPSHOT</version>
+		<version>0.3.1</version>
 	</parent>
 
 	<artifactId>bom-eap72</artifactId>

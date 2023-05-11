@@ -154,6 +154,11 @@
         	</dependency>
         	<dependency>
         		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-io-report</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-io-ssi</artifactId>
         		<version>${project.version}</version>
         	</dependency>

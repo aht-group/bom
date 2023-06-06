@@ -119,6 +119,11 @@
         	<!-- JEESL Modules -->
         	<dependency>
         		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-io-attribute</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-io-cms</artifactId>
         		<version>${project.version}</version>
         	</dependency>

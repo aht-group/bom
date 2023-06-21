@@ -134,6 +134,11 @@
         	</dependency>
         	<dependency>
         		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-io-db</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-io-label</artifactId>
         		<version>${project.version}</version>
         	</dependency>

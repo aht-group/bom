@@ -281,12 +281,6 @@
 				<version>0.0.8-SNAPSHOT</version>
 			</dependency>
 			
-			<!-- Jakarta EE -->
-			<dependency>
-    			<groupId>jakarta.inject</groupId>
-    			<artifactId>jakarta.inject-api</artifactId>
-				<version>1.0</version>
-			</dependency>
 			
 			<!-- Caching, not part of JakartaEE -->
 			<dependency>

@@ -16,6 +16,13 @@
 
 		<dependencies>
 		
+			<!-- JavaEE -->
+			<dependency>
+    			<groupId>jakarta.inject</groupId>
+    			<artifactId>jakarta.inject-api</artifactId>
+				<version>1.0</version>
+			</dependency>
+			
 			<!-- The following CDI APIs are taken from org.jboss.eap:wildfly-weld:7.1.1.GA-redhat-2 -->      	
 	      	<dependency>
 	      		<groupId>javax.enterprise</groupId>

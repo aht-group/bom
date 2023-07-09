@@ -18,10 +18,28 @@
 
 	<dependencyManagement>
 		<dependencies>	
+			<!-- JakartaEE -->
 			<dependency>
-    			<groupId>jakarta.inject</groupId>
-    			<artifactId>jakarta.inject-api</artifactId>
+				<groupId>jakarta.platform</groupId>
+				<artifactId>jakarta.jakartaee-api</artifactId>
+				<version>10.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.inject</groupId>
+				<artifactId>jakarta.inject-api</artifactId>
 				<version>2.0.1</version>
+			</dependency>
+			<dependency>
+    			<groupId>jakarta.ejb</groupId>
+    			<artifactId>jakarta.ejb-api</artifactId>
+				<version>4.0.1</version>
+			</dependency>
+			
+			<!-- JBoss EAP Wildfly -->
+			<dependency>
+				<groupId>org.wildfly.core</groupId>
+				<artifactId>wildfly-controller-client</artifactId>
+				<version>19.0.1.Final</version>
 			</dependency>
 			
 			<!-- Database -->
@@ -30,7 +48,6 @@
 				<artifactId>postgresql</artifactId>
 				<version>42.6.0</version> <!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
 			</dependency>			
-
 		</dependencies>
 	</dependencyManagement>
 

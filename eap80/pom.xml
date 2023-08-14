@@ -47,7 +47,12 @@
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>42.6.0</version> <!-- Update version in JbossModuleConfigurator and jeesl/listing/installation/jboss/modules/eap !! -->
-			</dependency>			
+			</dependency>	
+			<dependency>
+			    <groupId>org.flywaydb</groupId>
+			    <artifactId>flyway-core</artifactId>
+			    <version>9.20.1</version>
+			</dependency>		
 		</dependencies>
 	</dependencyManagement>
 

@@ -581,7 +581,12 @@
 				<version>8.0.28</version> <!-- Update version in JbossModuleConfigurator !! (previous: 8.0.15-->
 			</dependency>
 			
-            <!-- For working with beans e.g. to set properties -->
+            <!-- Apache Commons -->
+            <dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-configuration2</artifactId>
+				<version>2.9.0</version>
+			</dependency>
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>

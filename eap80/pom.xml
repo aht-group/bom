@@ -60,6 +60,28 @@
 	            <artifactId>hibernate-core</artifactId>
 	            <version>6.1.4.Final</version>
 	        </dependency>
+	        <dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>6.1.4.Final</version>
+			</dependency>
+			
+			<!-- Rewrite -->
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-servlet</artifactId>
+				<version>6.0.0.Alpha1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-config-prettyfaces</artifactId>
+				<version>6.0.0.Alpha1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-integration-cdi</artifactId>
+				<version>6.0.0.Alpha1</version>
+			</dependency>
 			
 			<!-- Database -->
 			<dependency>

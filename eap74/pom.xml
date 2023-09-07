@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jeesl.bom</groupId>
+		<artifactId>bom</artifactId>
+		<version>0.3.2-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>bom-eap74</artifactId>
+	<packaging>pom</packaging>
+	<name>JEESL BOM - EAP 7.4.11</name>
+	
+	<properties>
+		<version.com.fasterxml.jackson>2.10.4.redhat-00002</version.com.fasterxml.jackson>
+		<version.org.jboss.resteasy>3.11.2.Final-redhat-00002</version.org.jboss.resteasy>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Wildfly -->
+			<dependency>
+				<groupId>org.jboss.eap</groupId>
+				<artifactId>wildfly-ejb-client-bom</artifactId>
+				<version>7.3.4.GA</version>
+				<type>pom</type>
+			</dependency>
+			
+			<!-- Jakarta EE -->
+			<dependency>
+				<groupId>jakarta.platform</groupId>
+				<artifactId>jakarta.jakartaee-api</artifactId>
+				<version>8.0.0</version>
+			</dependency>
+
+			<!-- Jakarta EE -->
+			<dependency>
+				<groupId>jakarta.inject</groupId>
+				<artifactId>jakarta.inject-api</artifactId>
+				<version>1.0.5</version>
+			</dependency>
+
+			<dependency>
+				<groupId>jakarta.validation</groupId>
+				<artifactId>jakarta.validation-api</artifactId>
+				<version>2.0.2.redhat-00001</version>
+			</dependency> 
+			<dependency>
+				<groupId>jakarta.enterprise</groupId>
+				<artifactId>jakarta.enterprise.cdi-api</artifactId>
+				<version>2.0.2.redhat-00002</version>
+			</dependency> 
+			<dependency>
+				<groupId>org.jboss.spec.javax.ejb</groupId>
+				<artifactId>jboss-ejb-api_3.2_spec</artifactId>
+				<version>2.0.0.Final-redhat-00001</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.jboss.spec.javax.jms</groupId>
+			    <artifactId>jboss-jms-api_2.0_spec</artifactId>
+			    <version>2.0.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.spec.javax.ws.rs</groupId>
+				<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+				<version>2.0.1.Final-redhat-00001</version>
+			</dependency>
+			<dependency> <!-- EL (copy to metachart-bom) -->
+				<groupId>org.jboss.spec.javax.el</groupId>
+				<artifactId>jboss-el-api_3.0_spec</artifactId>
+				<version>2.0.0.Final-redhat-00001</version>
+			</dependency>
+			
+			<!--  tk: 2023-07-08 deactivated JSF (copy to metachart-bom) -->
+			<dependency> 
+				<groupId>org.jboss.spec.javax.faces</groupId>
+				<artifactId>jboss-jsf-api_2.3_spec</artifactId>
+				<version>3.0.0.SP04-redhat-00001</version>
+			</dependency>
+			
+			<!-- Jakarta JSF: 2013-09-02 tk changed to 3.0.0 for parallel use (copy to metachart-bom)-->
+			<dependency>   
+				<groupId>jakarta.faces</groupId>
+				<artifactId>jakarta.faces-api</artifactId>
+				<version>3.0.0</version>
+			</dependency> 
+			
+			<dependency> <!-- Servlet (copy to metachart-bom) -->
+				<groupId>org.jboss.spec.javax.servlet</groupId>
+				<artifactId>jboss-servlet-api_4.0_spec</artifactId>
+				<version>2.0.0.Final-redhat-00001</version>
+			</dependency>
+			
+			<!-- Taken Eclipse Microprofile -->
+			<dependency>
+				<groupId>org.eclipse.microprofile.metrics</groupId>
+				<artifactId>microprofile-metrics-api</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.microprofile.config</groupId>
+				<artifactId>microprofile-config-api</artifactId>
+				<version>1.4.0.redhat-00003</version>
+			</dependency>
+
+			<!-- Resteasy -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jaxrs</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>commons-logging</artifactId>
+						<groupId>commons-logging</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>slf4j-simple</artifactId>
+						<groupId>org.slf4j</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.jboss.spec.javax.ws.rs</groupId>
+						<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jboss.logging</groupId>
+						<artifactId>jboss-logging</artifactId>
+					</exclusion>
+					<exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client-microprofile</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>*</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jackson-provider</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.codehaus.jackson</groupId>
+						<artifactId>jackson-core-asl</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.codehaus.jackson</groupId>
+						<artifactId>jackson-mapper-asl</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.codehaus.jackson</groupId>
+						<artifactId>jackson-jaxrs</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.codehaus.jackson</groupId>
+						<artifactId>jackson-xc</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jackson2-provider</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.fasterxml.jackson.core</groupId>
+						<artifactId>jackson-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.fasterxml.jackson.core</groupId>
+						<artifactId>jackson-databind</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.fasterxml.jackson.core</groupId>
+						<artifactId>jackson-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.fasterxml.jackson.jaxrs</groupId>
+						<artifactId>jackson-jaxrs-json-provider</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.github.fge</groupId>
+						<artifactId>json-patch</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jaxb-provider</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-jaxrs</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-simple</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jboss.resteasy</groupId>
+						<artifactId>jaxrs-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-httpclient</groupId>
+						<artifactId>commons-httpclient</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.httpcomponents</groupId>
+						<artifactId>httpcore</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.httpcomponents</groupId>
+						<artifactId>httpclient</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>net.jcip</groupId>
+						<artifactId>jcip</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>net.jcip</groupId>
+						<artifactId>jcip-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jboss.spec.javax.annotation</groupId>
+						<artifactId>jboss-annotations-api_1.2_spec</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.annotation</groupId>
+						<artifactId>jsr250-api</artifactId>
+					</exclusion>
+					
+					<!-- TODO remove this exclusion once this supports Jakarta Activation -->
+					<!-- Superceded by com.sun.activation:jakarta.activation -->
+					<exclusion>
+						<groupId>javax.activation</groupId>
+						<artifactId>activation</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-json-binding-provider</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>*</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-json-p-provider</artifactId>
+				<version>${version.org.jboss.resteasy}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>*</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<!-- Rewrite (2023-01-20 tk: Updated from 3.4.1.Final to 3.5.1.Final) -->
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-servlet</artifactId>
+				<version>3.5.1.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-config-prettyfaces</artifactId>
+				<version>3.5.1.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-integration-cdi</artifactId>
+				<version>3.5.1.Final</version>
+			</dependency>
+			
+			<!-- Infinispan, the version of caffeine needs to be aligned with infinispan -->
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-core</artifactId>
+				<version>11.0.15.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-cdi-embedded</artifactId>
+				<version>11.0.15.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-jcache</artifactId>
+				<version>11.0.15.Final</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.github.ben-manes.caffeine</groupId>
+				<artifactId>caffeine</artifactId>
+				<version>2.8.4</version>
+			</dependency>
+			
+			<!-- Arquillian (taken from eap63) -->
+			<dependency>
+				<groupId>org.jboss.arquillian.junit</groupId>
+				<artifactId>arquillian-junit-container</artifactId>
+				<version>1.0.0.CR7</version>
+				<scope>test</scope>
+			</dependency> 
+
+			<!-- Hibernate -->
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.1-api</artifactId>
+				<version>1.0.2.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>5.3.28.Final</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.fasterxml</groupId>
+						<artifactId>classmate</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javassist</groupId>
+						<artifactId>javassist</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.activation</groupId>
+						<artifactId>javax.activation-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.persistence</groupId>
+						<artifactId>javax.persistence-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.transaction</groupId>
+						<artifactId>jta</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.xml.bind</groupId>
+						<artifactId>jaxb-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-log4j12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.geronimo.specs</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jboss.spec.javax.transaction</groupId>
+						<artifactId>jboss-transaction-api_1.2_spec</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.jboss.logging</groupId>
+						<artifactId>jboss-logging-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+					<!-- TODO remove this exclusion once this depends on Jakarta Persistence -->
+					<!-- superseded by jakarta.persistence:jakarta.persistence-api -->
+					<exclusion>
+						<groupId>javax.persistence</groupId>
+						<artifactId>javax.persistence-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>5.3.28.Final</version>
+			</dependency>
+			<dependency> 
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-spatial</artifactId>
+				<version>5.3.28.Final</version>
+			</dependency>
+			<dependency>
+				<!-- This lib is required for JSON PG Types, unfortunaltely JB 7.3.4 has 5.0.5 bundled -->
+				<groupId>org.hibernate.common</groupId>
+				<artifactId>hibernate-commons-annotations</artifactId>
+				<version>5.1.0.Final</version>
+			</dependency>
+			
+			<!-- GEO -->
+			<dependency>
+				<groupId>org.geolatte</groupId>
+				<artifactId>geolatte-geom</artifactId>
+				<version>1.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vividsolutions</groupId>
+				<artifactId>jts-core</artifactId>
+				<version>1.14.0</version>
+			</dependency>
+
+			<!-- JSF -->
+			<dependency>
+				<groupId>org.primefaces</groupId>
+				<artifactId>primefaces</artifactId>
+				<version>8.0</version>
+			</dependency>
+			<dependency> <!-- OmniFaces (copy to metachart-bom) -->
+				<groupId>org.omnifaces</groupId>
+				<artifactId>omnifaces</artifactId>
+				<version>3.0</version>
+			</dependency>
+			
+			<!-- HTML Utils -->
+			<dependency>
+				<groupId>com.blueconic</groupId>
+				<artifactId>browscap-java</artifactId>
+				<version>1.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.webjars</groupId>
+				<artifactId>font-awesome</artifactId>
+				<version>5.12.0</version>
+			</dependency>
+			<dependency>
+		    	<groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+		    	<artifactId>owasp-java-html-sanitizer</artifactId>
+				<version>20191001.1</version>
+			</dependency>
+			<dependency>
+				<groupId>nl.captcha</groupId>
+				<artifactId>simplecaptcha</artifactId>
+				<version>1.2.1</version>
+			</dependency>
+
+			<!-- JAXB -->
+			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-runtime</artifactId>
+				<version>2.3.3.b02-redhat-00001</version>
+			</dependency>
+
+			<!-- JSON Jackson -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${version.com.fasterxml.jackson}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${version.com.fasterxml.jackson}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${version.com.fasterxml.jackson}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+    			<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${version.com.fasterxml.jackson}</version>
+			</dependency>
+
+			<!-- Database -->
+			<dependency>
+				<groupId>net.postgis</groupId>
+				<artifactId>postgis-jdbc</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>net.postgis</groupId>
+				<artifactId>postgis-geometry</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.flywaydb</groupId>
+			    <artifactId>flyway-core</artifactId>
+			    <version>9.20.1</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<configuration>
+					<rulesUri>${maven.ignore.versions}</rulesUri>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -74,12 +74,18 @@
 		         <groupId>org.jeesl</groupId>
 		         <artifactId>jeesl-jsf</artifactId>
 		         <version>${project.version}</version>
-		      </dependency>
-		      <dependency>
+			</dependency>
+			<dependency>
+		         <groupId>org.jeesl</groupId>
+		         <artifactId>jeesl-jsf</artifactId>
+		         <version>${project.version}</version>
+		         <classifier>jakarta</classifier>
+			</dependency>
+			<dependency>
 		         <groupId>org.jeesl</groupId>
 		         <artifactId>jeesl-report</artifactId>
 		         <version>${project.version}</version>
-		      </dependency>
+			</dependency>
 			<dependency>
       			<groupId>org.jeesl</groupId>
       			<artifactId>jeesl-test</artifactId>

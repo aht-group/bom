@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+       
+	<groupId>org.jeesl.bom</groupId>
+    <artifactId>bom-parent</artifactId>
+    <version>0.3.2-SNAPSHOT</version>
+    
+    <packaging>pom</packaging>
+	<name>JEESL BOM - Parent</name>
+	
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version>
+					<configuration><encoding>UTF-8</encoding></configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+  					<artifactId>maven-war-plugin</artifactId>
+    				<version>3.4.0</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.wildfly.plugins</groupId>
+					<artifactId>wildfly-maven-plugin</artifactId>
+					<version>3.0.2.Final</version>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>versions-maven-plugin</artifactId>
+					<version>2.16.1</version>
+					<configuration><rulesUri>classpath:///jeesl/io/maven/ignore.xml</rulesUri></configuration>
+					<dependencies>
+						<!--
+						<dependency>
+							<groupId>org.jeesl</groupId>
+							<artifactId>jeesl-maven</artifactId>
+							<version>0.3.2-SNAPSHOT</version>
+						</dependency>
+						
+						-->
+					</dependencies>
+				</plugin>
+			
+				<plugin>
+					<groupId>org.jeesl</groupId>
+					<artifactId>jeesl-maven</artifactId>
+					<version>0.3.2-SNAPSHOT</version>
+				</plugin>
+				
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.4.1</version>
+					<executions>
+						<execution>
+			            <id>enforce-maven</id>
+			            <goals><goal>enforce</goal></goals>
+			            <configuration>
+			              <rules>
+			                <requireMavenVersion><version>3.3.0</version></requireMavenVersion>
+			              </rules>    
+			            </configuration>
+			          </execution>
+				</executions>
+			</plugin>
+		</plugins>	
+	</build>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype.snapshot</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<repositories>
+		<repository>
+		    <id>aht.3rd</id>
+		    <name>AHT Nexus Third Party</name>
+		    <url>https://www.aht-group.com/nexus/content/repositories/thirdparty</url>
+		    <releases><enabled>true</enabled></releases>
+		    <snapshots><enabled>false</enabled></snapshots>
+		</repository>
+		<repository>
+		    <id>sonatype.snapshot</id>
+		    <name>Sonatype Snapshot Repository</name>
+		    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		    <releases><enabled>false</enabled></releases>
+		    <snapshots><enabled>true</enabled></snapshots>
+		</repository>
+		<repository>
+		    <id>jboss.public</id>
+		    <name>JBoss Repository</name>
+		    <url>https://repository.jboss.org/nexus/content/groups/public</url>
+		    <releases><enabled>true</enabled></releases>
+		    <snapshots><enabled>false</enabled></snapshots>
+		</repository>
+		<repository>
+		    <id>redhat.ga</id>
+		    <name>JBoss Repository</name>
+		    <url>https://maven.repository.redhat.com/ga</url>
+		    <releases><enabled>true</enabled></releases>
+		    <snapshots><enabled>false</enabled></snapshots>
+		</repository>
+		<repository>
+			<!--Aspose for WordRendering -->
+			<id>aspose</id>
+			<name>Aspose Java API</name>
+			<url>https://repository.aspose.com/repo/</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
+		</repository>
+	</repositories>
+</project>

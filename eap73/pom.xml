@@ -16,8 +16,9 @@
 		<version.org.jboss.resteasy>3.11.2.Final-redhat-00002</version.org.jboss.resteasy>
 	</properties>
 
-	<dependencyManagement>
+	<dependencyManagement>	
 		<dependencies>
+			
 			<!-- Wildfly -->
 			<dependency>
 				<groupId>org.jboss.eap</groupId>
@@ -503,16 +504,4 @@
 
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>versions-maven-plugin</artifactId>
-				<configuration>
-					<rulesUri>${maven.ignore.versions}</rulesUri>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>

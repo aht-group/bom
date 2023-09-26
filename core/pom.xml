@@ -14,6 +14,12 @@
 
 	<dependencyManagement>
         <dependencies>
+			
+			<dependency>
+				<groupId>org.jeesl.bom</groupId>
+				<artifactId>jeesl-ignore</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 
         	<!-- JEESL -->
 			<dependency>

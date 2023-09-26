@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+        <groupId>org.jeesl.bom</groupId>
+        <artifactId>bom</artifactId>
+        <version>0.3.2-SNAPSHOT</version>
+    </parent>
+    
+	<groupId>org.jeesl.bom</groupId>
+    <artifactId>jeesl-ignore</artifactId>
+    <version>0.3.2-SNAPSHOT</version>
+    <name>JEESL BOM - Ignore</name>
+    <packaging>jar</packaging>
+	
+	<build>
+		<plugins>
+			
+			<plugin>
+				<groupId>net.sf.exlp</groupId>
+				<artifactId>exlp-maven</artifactId>
+				<version>0.1.18-SNAPSHOT</version>
+				<executions>
+ 					<execution>
+						<id>create-merged-maven-ignore</id>
+						<phase>process-resources</phase> 
+						<goals><goal>mvnVersionIgnore</goal></goals>
+						<configuration>
+							<log>WARN</log>
+							<files>
+							  <param>exlp/maven/exlp-versions.xml</param>
+							   <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/commons.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/ee.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jakarta.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/javax.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jboss.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jeesl.xml</param>
+							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jsf.xml</param>
+							</files>
+							<saveTo>${basedir}/src/main/resources/jeesl/io/maven/ignore.xml</saveTo>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<profiles>
+		<profile>
+			<id>ram</id>
+       		<build>
+       			<directory>${my.build.directory}</directory>
+       		</build>
+		</profile>
+		<profile>
+			<id>only-eclipse</id>
+			<activation><property><name>m2e.version</name></property></activation>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.eclipse.m2e</groupId>
+							<artifactId>lifecycle-mapping</artifactId>
+							<version>1.0.0</version>
+							<configuration>
+								<lifecycleMappingMetadata>
+									<pluginExecutions>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>net.sf.exlp</groupId>
+												<artifactId>exlp-maven</artifactId>
+												<versionRange>[0.1,)</versionRange>
+												<goals><goal>mvnVersionIgnore</goal></goals>
+											</pluginExecutionFilter>
+											<action><ignore /></action>
+										</pluginExecution>
+									</pluginExecutions>
+								</lifecycleMappingMetadata>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
+	
+</project>

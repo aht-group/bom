@@ -1,0 +1,88 @@
+<ruleset comparisonMethod="maven"
+         xmlns="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0
+							http://mojo.codehaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
+<rules>
+	<rule groupId="commons-beanutils" comparisonMethod="maven">
+		<ignoreVersions>
+			<ignoreVersion>1.9.4.redhat-00001</ignoreVersion>
+			<ignoreVersion>1.9.4.redhat-00002</ignoreVersion>
+		</ignoreVersions>
+	</rule>
+    <rule groupId="net.jcip" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>1.0-redhat-1</ignoreVersion>
+      	<ignoreVersion>1.0-redhat-2</ignoreVersion>
+      	<ignoreVersion>1.0-redhat-3</ignoreVersion>
+      	<ignoreVersion>1.0-redhat-4</ignoreVersion>
+      	<ignoreVersion>1.0.redhat-4</ignoreVersion>
+      	<ignoreVersion>1.0.redhat-6</ignoreVersion>
+      	<ignoreVersion>1.0.0.redhat-6</ignoreVersion>
+      	<ignoreVersion>1.0.0.redhat-7</ignoreVersion>
+        <ignoreVersion>1.0.0.redhat-8</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.bouncycastle" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>1.46-redhat-2</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.codehaus.groovy" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>2.6.0-alpha-1</ignoreVersion>
+      	<ignoreVersion>2.6.0-alpha-2</ignoreVersion>
+      	<ignoreVersion>2.6.0-alpha-3</ignoreVersion>
+      	<ignoreVersion>2.6.0-alpha-4</ignoreVersion>
+      	<ignoreVersion>3.0.0-alpha-1</ignoreVersion>
+      	<ignoreVersion>3.0.0-alpha-2</ignoreVersion>
+      	<ignoreVersion>3.0.0-alpha-3</ignoreVersion>
+      	<ignoreVersion>3.0.0-alpha-4</ignoreVersion>
+      	<ignoreVersion>3.0.0-beta-1</ignoreVersion>
+      	<ignoreVersion>3.0.0-beta-2</ignoreVersion>
+		<ignoreVersion>3.0.0-beta-3</ignoreVersion>
+      	<ignoreVersion>3.0.0-rc-1</ignoreVersion>
+        <ignoreVersion>3.0.0-rc-2</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+	<rule groupId="org.drools" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion>7.32.0.k20191220</ignoreVersion>
+        <ignoreVersion>7.32.0.k20191223</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.hibernate" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>6.0.0.Alpha2</ignoreVersion>
+      	<ignoreVersion>6.0.0.Alpha3</ignoreVersion>
+        <ignoreVersion>6.0.0.Alpha4</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+
+    <rule groupId="org.postgresql" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>42.2.9.jre6</ignoreVersion>
+      	<ignoreVersion>42.2.9.jre7</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.scannotation" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>1.0.3.redhat-4</ignoreVersion>
+      	<ignoreVersion>1.0.3.redhat-5</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.fusesource.jansi" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>2.4.0.redhat-00001</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="org.eclipse.paho" comparisonMethod="maven">
+      <ignoreVersions>
+      	<ignoreVersion>1.2.5.redhat-00001</ignoreVersion>
+      	<ignoreVersion>1.2.5.redhat-00002</ignoreVersion>
+      	<ignoreVersion>1.2.5.redhat-00003</ignoreVersion>
+      	
+      </ignoreVersions>
+    </rule>
+</rules>
+</ruleset>

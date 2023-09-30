@@ -8,15 +8,12 @@
         <version>0.3.2-SNAPSHOT</version>
     </parent>
     
-	<groupId>org.jeesl.bom</groupId>
     <artifactId>jeesl-ignore</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
     <name>JEESL BOM - Ignore</name>
     <packaging>jar</packaging>
 	
 	<build>
 		<plugins>
-			
 			<plugin>
 				<groupId>net.sf.exlp</groupId>
 				<artifactId>exlp-maven</artifactId>

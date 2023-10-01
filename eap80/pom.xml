@@ -66,6 +66,13 @@
 				<version>6.1.4.Final</version>
 			</dependency>
 			
+			<!-- RestEasy -->
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client</artifactId>
+				<version>6.1.0.Final</version>
+			</dependency>
+			
 			<!-- Rewrite -->
 			<dependency>
 				<groupId>org.ocpsoft.rewrite</groupId>

@@ -423,11 +423,39 @@
 				<artifactId>primefaces</artifactId>
 				<version>8.0</version>
 			</dependency>
+
 			<dependency> <!-- OmniFaces (copy to metachart-bom) -->
 				<groupId>org.omnifaces</groupId>
 				<artifactId>omnifaces</artifactId>
 				<version>3.0</version>
 			</dependency>
+			
+			<!-- Primefaces -->
+			<dependency>  
+		    	<groupId>org.primefaces</groupId>  
+		        <artifactId>primefaces</artifactId>
+		        <version>8.0</version>
+		    </dependency>
+			<dependency>
+		        <groupId>org.primefaces.extensions</groupId>
+		        <artifactId>primefaces-extensions</artifactId>
+		        <version>8.0.4</version>
+	    	</dependency>
+		   	<dependency>  
+		   		<groupId>org.primefaces.themes</groupId>  
+		   		<artifactId>cupertino</artifactId>  
+		   		<version>1.0.10</version>  
+		   	</dependency>
+		   	<dependency>  
+				<groupId>org.primefaces.themes</groupId>  
+				<artifactId>blitzer</artifactId>
+				<version>1.0.10</version>  
+			</dependency>
+			<dependency>  
+			    <groupId>org.primefaces.themes</groupId>  
+			    <artifactId>afterwork</artifactId>  
+			    <version>1.0.9</version>
+			</dependency> 
 			
 			<!-- HTML Utils -->
 			<dependency>
@@ -499,7 +527,7 @@
 			<dependency>
 			    <groupId>org.flywaydb</groupId>
 			    <artifactId>flyway-core</artifactId>
-			    <version>9.20.1</version>
+			    <version>9.22.2</version>
 			</dependency>
 
 		</dependencies>

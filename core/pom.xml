@@ -334,7 +334,7 @@
         	<dependency>
 				<groupId>com.monitorjbl</groupId>
 				<artifactId>xlsx-streamer</artifactId>
-				<version>1.2.1</version> <!-- 1.2.1 to 2.0.0 -->
+				<version>2.1.0</version> <!-- 2.1.0 to 2.0.0 -->
 			</dependency>
 			
         	

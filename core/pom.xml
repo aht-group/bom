@@ -324,21 +324,19 @@
         	<dependency>
         		<groupId>org.apache.poi</groupId>
         		<artifactId>poi</artifactId>
-        		<version>3.17</version>
+        		<version>5.2.3</version> <!-- Updated on 2023-10-13 from 3.17 -->
         	</dependency>
         	<dependency>
         		<groupId>org.apache.poi</groupId>
         		<artifactId>poi-ooxml</artifactId>
-        		<version>3.17</version>  <!-- 3.17 to 4.0.0 -->
+        		<version>5.2.3</version>  <!-- Updated on 2023-10-13 from 3.17 -->
         	</dependency>
         	<dependency>
 				<groupId>com.monitorjbl</groupId>
 				<artifactId>xlsx-streamer</artifactId>
-				<version>1.2.1</version> <!-- 1.2.1 to 2.0.0 -->
+				<version>2.1.0</version> <!-- Updated on 2023-10-13 from 1.2.1 -->
 			</dependency>
 			
-        	
-        	
         	<!-- Google App Engine -->
 			<dependency>
 				<groupId>com.googlecode.objectify</groupId>

@@ -452,7 +452,6 @@
 			</dependency>
         	
 			<!-- JSON -->
-			<!-- JSON https://github.com/FasterXML/jackson-docs/wiki/Using-Jackson2-with-Maven -->
 			<dependency>
 			   <groupId>com.fasterxml.jackson.core</groupId>
 			   <artifactId>jackson-annotations</artifactId>
@@ -556,14 +555,7 @@
 			    <artifactId>aws-java-sdk-s3</artifactId>
 			    <version>1.11.714</version>
 		    </dependency>
-						
-			<!-- Tests -->
-			<dependency>
-	  	   		<groupId>junit</groupId>
-	  	   		<artifactId>junit</artifactId>
-	  	   		<version>4.12</version>
-	  	   	</dependency>
-	  	   	
+
 			<!-- Database -->
 			<dependency>
 				<groupId>org.postgresql</groupId>
@@ -610,6 +602,35 @@
 	    		<groupId>javax.mail</groupId>
 	    		<artifactId>javax.mail-api</artifactId>
 	    		<version>1.5.6</version>
+			</dependency>
+			
+			<!-- Tests -->
+			<dependency>
+	  	   		<groupId>junit</groupId>
+	  	   		<artifactId>junit</artifactId>
+	  	   		<version>4.12</version>
+	  	   	</dependency>
+			
+			<!-- Logging -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>2.20.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>2.20.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j2-impl</artifactId>
+				<version>2.20.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j-impl</artifactId>
+				<version>2.20.0</version>
 			</dependency>
         </dependencies>
     </dependencyManagement>

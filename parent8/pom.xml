@@ -61,13 +61,11 @@
 						</dependency>
 					</dependencies>
 				</plugin>
-			
 				<plugin>
 					<groupId>org.jeesl</groupId>
 					<artifactId>jeesl-maven</artifactId>
 					<version>0.3.2-SNAPSHOT</version>
 				</plugin>
-				
 			</plugins>
 		</pluginManagement>
 		<plugins>

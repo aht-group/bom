@@ -43,6 +43,11 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-ejb-plugin</artifactId>
+					<version>3.2.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
   					<artifactId>maven-war-plugin</artifactId>
     				<version>3.4.0</version>
 				</plugin>
@@ -51,7 +56,6 @@
 					<groupId>org.wildfly.plugins</groupId>
 					<artifactId>wildfly-maven-plugin</artifactId>
 					<version>3.0.2.Final</version>
-<!--					<configuration><skip>true</skip></configuration> -->
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -87,17 +91,16 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.4.1</version>
 					<executions>
 						<execution>
 			            <id>enforce-maven</id>
 			            <goals><goal>enforce</goal></goals>
-			            <configuration>
-			              <rules>
-			                <requireMavenVersion><version>3.3.0</version></requireMavenVersion>
-			              </rules>    
+						<configuration>
+							<rules>
+								<requireMavenVersion><version>3.3.0</version></requireMavenVersion>
+							</rules>    
 			            </configuration>
-			          </execution>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>	

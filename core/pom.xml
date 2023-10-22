@@ -233,6 +233,11 @@
         	</dependency>
         	<dependency>
         		<groupId>org.jeesl</groupId>
+        		<artifactId>jeesl-module-ts</artifactId>
+        		<version>${project.version}</version>
+        	</dependency>
+        	<dependency>
+        		<groupId>org.jeesl</groupId>
         		<artifactId>jeesl-system-constraint</artifactId>
         		<version>${project.version}</version>
         	</dependency>

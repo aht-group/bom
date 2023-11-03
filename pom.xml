@@ -168,6 +168,16 @@
 											</pluginExecutionFilter>
 											<action><ignore /></action>
 										</pluginExecution>
+										<pluginExecution>
+											<pluginExecutionFilter>
+												<groupId>io.github.cleydyr</groupId>
+												<artifactId>dart-sass-maven-plugin
+												</artifactId>
+												<versionRange>[1.1.0,)</versionRange>
+												<goals><goal>compile-sass</goal></goals>
+											</pluginExecutionFilter>
+											<action><ignore></ignore></action>
+										</pluginExecution>
 									</pluginExecutions>
 								</lifecycleMappingMetadata>
 							</configuration>

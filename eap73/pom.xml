@@ -109,7 +109,6 @@
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-jaxrs</artifactId>
 				<version>3.11.2.Final-redhat-00002</version>
-				
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
@@ -145,7 +144,6 @@
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-json-binding-provider</artifactId>
 				<version>3.11.2.Final-redhat-00002</version>
-				
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
@@ -316,6 +314,11 @@
 		        <artifactId>primefaces-extensions</artifactId>
 		        <version>8.0.4</version>
 	    	</dependency>
+	    	<dependency>
+				<groupId>org.primefaces.extensions</groupId>
+				<artifactId>resources-ckeditor</artifactId>
+				<version>8.0</version>
+			</dependency>
 		   	<dependency>  
 		   		<groupId>org.primefaces.themes</groupId>  
 		   		<artifactId>cupertino</artifactId>  

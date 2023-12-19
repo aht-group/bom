@@ -43,18 +43,18 @@
 				<artifactId>jeesl-cycle</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-        	<dependency>
+<!--	       	<dependency>
 				<groupId>org.jeesl</groupId>
 				<artifactId>jeesl-xml</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			<dependency>
+-->				<dependency>
 	        	<groupId>org.jeesl</groupId>
 	        	<artifactId>jeesl-xml</artifactId>
 				<version>${project.version}</version>
 	        	<classifier>tests</classifier>
 	        </dependency>
-	        <dependency>
+			<dependency>
 	        	<groupId>org.jeesl</groupId>
 	        	<artifactId>jeesl-xml</artifactId>
 				<version>${project.version}</version>

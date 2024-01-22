@@ -289,20 +289,7 @@
 				<artifactId>jts-core</artifactId>
 				<version>1.14.0</version>
 			</dependency>
-
-			<!-- JSF -->
-			<dependency>
-				<groupId>org.primefaces</groupId>
-				<artifactId>primefaces</artifactId>
-				<version>8.0</version>
-			</dependency>
-
-			<dependency> <!-- OmniFaces (copy to metachart-bom) -->
-				<groupId>org.omnifaces</groupId>
-				<artifactId>omnifaces</artifactId>
-				<version>3.0</version>
-			</dependency>
-			
+	
 			<!-- Primefaces -->
 			<dependency>  
 		    	<groupId>org.primefaces</groupId>  
@@ -333,7 +320,14 @@
 			    <groupId>org.primefaces.themes</groupId>  
 			    <artifactId>afterwork</artifactId>  
 			    <version>1.0.9</version>
-			</dependency> 
+			</dependency>
+			
+			<!-- OmniFaces (copy to metachart-bom) -->
+			<dependency> 
+				<groupId>org.omnifaces</groupId>
+				<artifactId>omnifaces</artifactId>
+				<version>3.0</version>
+			</dependency>
 			
 			<!-- HTML Utils -->
 			<dependency>

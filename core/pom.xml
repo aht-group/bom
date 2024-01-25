@@ -403,7 +403,7 @@
         		<artifactId>hibernate-core</artifactId>
         		<version>4.0.1.Final</version>
         	</dependency>
-  	
+
 			<!-- Primefaces -->
 			<dependency>  
 		    	<groupId>org.primefaces</groupId>  

@@ -26,14 +26,14 @@
 						<configuration>
 							<log>WARN</log>
 							<files>
-							  <param>exlp/maven/exlp-versions.xml</param>
-							   <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/commons.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/ee.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jakarta.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/javax.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jboss.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jeesl.xml</param>
-							  <param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jsf.xml</param>
+								<param>exlp/maven/exlp-versions.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/commons.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/ee.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jakarta.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/javax.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jboss.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jeesl.xml</param>
+								<param>${basedir}/src/main/resources/jeesl/io/maven/ignore/jsf.xml</param>
 							</files>
 							<saveTo>${basedir}/src/main/resources/jeesl/io/maven/ignore.xml</saveTo>
 						</configuration>

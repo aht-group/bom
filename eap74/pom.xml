@@ -31,16 +31,13 @@
 			<dependency>
 				<groupId>jakarta.platform</groupId>
 				<artifactId>jakarta.jakartaee-api</artifactId>
-				<version>8.0.0</version>
+				<version>9.0.0</version>
 			</dependency>
-
-			<!-- Jakarta EE -->
 			<dependency>
 				<groupId>jakarta.inject</groupId>
 				<artifactId>jakarta.inject-api</artifactId>
 				<version>1.0.5</version>
 			</dependency>
-
 			<dependency>
 				<groupId>jakarta.validation</groupId>
 				<artifactId>jakarta.validation-api</artifactId>
@@ -405,6 +402,16 @@
 				<artifactId>hibernate-commons-annotations</artifactId>
 				<version>5.1.0.Final</version>
 			</dependency>
+			<dependency>
+				<groupId>net.postgis</groupId>
+				<artifactId>postgis-jdbc</artifactId>
+				<version>2.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>net.postgis</groupId>
+				<artifactId>postgis-geometry</artifactId>
+				<version>2.5.0</version>
+			</dependency>
 			
 			<!-- GEO -->
 			<dependency>
@@ -422,7 +429,7 @@
 			<dependency>
 				<groupId>org.primefaces</groupId>
 				<artifactId>primefaces</artifactId>
-				<version>8.0</version>
+				<version>12.0.0</version>
 			</dependency>
 			<dependency> <!-- OmniFaces (copy to metachart-bom) -->
 				<groupId>org.omnifaces</groupId>
@@ -482,16 +489,6 @@
 			</dependency>
 
 			<!-- Database -->
-			<dependency>
-				<groupId>net.postgis</groupId>
-				<artifactId>postgis-jdbc</artifactId>
-				<version>2.5.0</version>
-			</dependency>
-			<dependency>
-				<groupId>net.postgis</groupId>
-				<artifactId>postgis-geometry</artifactId>
-				<version>2.5.0</version>
-			</dependency>
 			<dependency>
 			    <groupId>org.flywaydb</groupId>
 			    <artifactId>flyway-core</artifactId>

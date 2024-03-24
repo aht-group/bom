@@ -151,7 +151,6 @@
 		    <snapshots><enabled>false</enabled></snapshots>
 		</repository>
 		<repository>
-			<!--Aspose for WordRendering -->
 			<id>aspose</id>
 			<name>Aspose Java API</name>
 			<url>https://repository.aspose.com/repo/</url>

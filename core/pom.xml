@@ -317,7 +317,6 @@
 				<version>0.0.8-SNAPSHOT</version>
 			</dependency>
 			
-			
 			<!-- Caching, not part of JakartaEE -->
 			<dependency>
 				<groupId>javax.cache</groupId>

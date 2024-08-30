@@ -160,7 +160,6 @@
 												<versionRange>[0.3.0-SNAPSHOT,)</versionRange>
 												<goals>
 													<goal>createSeamSecurity</goal>
-													<goal>msgBundle</goal>
 													<goal>msgBundle2</goal>
 													<goal>createJs</goal>
 													<goal>compileReports</goal>

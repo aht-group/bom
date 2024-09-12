@@ -578,12 +578,22 @@
     			<classifier>jdk17</classifier>
 			</dependency>
 			
-			<!-- Amazon AWS -->
+			<!-- Amazon AWS
+					2024-09-11 tk: 1.11.714 to 1.11.1034
+					2024-09-11 tk: 1.11.1034 to 1.12.771
+			-->
 			<dependency>
 			    <groupId>com.amazonaws</groupId>
 			    <artifactId>aws-java-sdk-s3</artifactId>
-			    <version>1.11.714</version>
+			    <version>1.12.771</version>
 		    </dependency>
+		    
+		    <!-- Java 2 API -->
+		    <dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>s3</artifactId>
+				<version>2.27.23</version>
+			</dependency>
 		    
 		    <!-- OpenAI -->
 		    <dependency>

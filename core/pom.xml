@@ -586,11 +586,12 @@
 			<!-- Amazon AWS
 					2024-09-11 tk: 1.11.714 to 1.11.1034
 					2024-09-11 tk: 1.11.1034 to 1.12.771
+					2024-09-11 tk: 1.12.771 to 1.12.780
 			-->
 			<dependency>
 			    <groupId>com.amazonaws</groupId>
 			    <artifactId>aws-java-sdk-s3</artifactId>
-			    <version>1.12.771</version>
+			    <version>1.12.780</version>
 		    </dependency>
 		    
 		    <!-- Java 2 API -->

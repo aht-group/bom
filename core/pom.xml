@@ -594,7 +594,7 @@
 			    <version>1.12.780</version>
 		    </dependency>
 		    
-		    <!-- Java 2 API -->
+		    <!-- AWS S3 v.2 -->
 		    <dependency>
 				<groupId>software.amazon.awssdk</groupId>
 				<artifactId>s3</artifactId>
@@ -623,6 +623,11 @@
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>8.0.28</version> <!-- Update version in JbossModuleConfigurator !! (previous: 8.0.15-->
+			</dependency>
+			<dependency>
+				<groupId>org.mongojack</groupId>
+				<artifactId>mongojack</artifactId>
+				<version>5.0.2</version>
 			</dependency>
 			
             <!-- Apache Commons -->

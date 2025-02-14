@@ -457,6 +457,13 @@
 				<version>1.2</version>
 			</dependency>
 			
+			<!-- HTML -->
+			<dependency>
+				<groupId>com.blueconic</groupId>
+				<artifactId>browscap-java</artifactId>
+				<version>1.4.4</version>
+			</dependency>
+			
 			<!-- JCR -->
 			<dependency>
 				<groupId>org.apache.jackrabbit</groupId>

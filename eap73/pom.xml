@@ -157,21 +157,23 @@
 				<version>3.11.2.Final-redhat-00002</version>
 			</dependency>
 
-			<!-- Rewrite (2023-01-20 tk: Updated from 3.4.1.Final to 3.5.1.Final) -->
+			<!-- Rewrite -->
+			<!-- 2023-01-20 tk: Updated from 3.4.1 to 3.5.1 -->
+			<!-- 2025-03-01 tk: Updated from 3.5.1 to 8.0.1-->
 			<dependency>
 				<groupId>org.ocpsoft.rewrite</groupId>
 				<artifactId>rewrite-servlet</artifactId>
-				<version>3.5.1.Final</version>
+				<version>8.0.1.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ocpsoft.rewrite</groupId>
 				<artifactId>rewrite-config-prettyfaces</artifactId>
-				<version>3.5.1.Final</version>
+				<version>8.0.1.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ocpsoft.rewrite</groupId>
 				<artifactId>rewrite-integration-cdi</artifactId>
-				<version>3.5.1.Final</version>
+				<version>8.0.1.Final</version>
 			</dependency>
 			
 			<!-- Infinispan, the version of caffeine needs to be aligned with infinispan -->

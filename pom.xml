@@ -60,6 +60,26 @@
 	<issueManagement>
 	</issueManagement>
 	
+	<repositories>
+		<repository>
+		    <id>sonatype.snapshot</id>
+		    <name>Sonatype Snapshot Repository</name>
+		    <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+		    <releases><enabled>false</enabled></releases>
+		    <snapshots><enabled>true</enabled></snapshots>
+		</repository>
+	</repositories>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype.snapshot</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://central.sonatype.com/repository/maven-snapshots/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+	
 	<dependencyManagement>
 	</dependencyManagement>
 	

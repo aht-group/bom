@@ -42,9 +42,7 @@
 			<snapshots><enabled>false</enabled></snapshots>
 		</repository>
 	</repositories>
-	
 
-	
 	<build>
 		<pluginManagement>
 			<plugins>

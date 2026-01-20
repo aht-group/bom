@@ -354,18 +354,18 @@
         	<dependency>
         		<groupId>org.apache.poi</groupId>
         		<artifactId>poi</artifactId>
-        		<version>5.2.4</version> 
+        		<version>5.2.5</version> 
         	</dependency>
         	<dependency>
         		<groupId>org.apache.poi</groupId>
         		<artifactId>poi-ooxml</artifactId>
-        		<version>5.2.4</version>
+        		<version>5.2.5</version>
         	</dependency>
         	
 			<dependency>
 			    <groupId>com.github.pjfanning</groupId>
 			    <artifactId>excel-streaming-reader</artifactId>
-			    <version>4.2.0</version>
+			    <version>4.3.1</version>
 			</dependency>
 			
 			<!-- Updated on 2023-10-13 from 1.2.1 -->
@@ -650,12 +650,12 @@
 			    <version>2.14.0</version>
 			</dependency>
 			
-            <!-- Apache Commons -->
+            <!-- Apache Commons 
             <dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
 				<version>2.18.0</version>
-			</dependency>
+			</dependency> -->
             
 			<dependency>
 				<!-- 2026-01-10 tk: Updated from 1.10.0 to 1.12.0  -->

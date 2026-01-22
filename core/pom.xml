@@ -540,16 +540,18 @@
 			</dependency>
         	
         	<!-- JasperReports -->
+        	<!-- 2026-01-22 tk update from 6.20.6 to 6.21.3-->
         	<dependency>
         		<groupId>net.sf.jasperreports</groupId>
         		<artifactId>jasperreports</artifactId>
-        		<version>6.20.6</version>
+        		<version>6.21.3</version>
         	</dependency>
 			<dependency>
 			    <groupId>net.sf.jasperreports</groupId>
 			    <artifactId>jasperreports-fonts</artifactId>
-			    <version>6.20.6</version>
+			    <version>6.21.3</version>
 			</dependency>
+			
         	<dependency>
         		<groupId>org.codehaus.groovy</groupId>
         		<artifactId>groovy-all</artifactId>
@@ -668,9 +670,10 @@
 			
             <dependency>
             	<!-- 2022-04-24 tk: Updated from 1.9.0 to 1.9.4  -->
+            	<!-- 2026-01-22 tk: Updated from 1.9.4 to 1.11.0  -->
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
-                <version>1.9.4</version> 
+                <version>1.11.0</version> 
             </dependency>
             
             <dependency>

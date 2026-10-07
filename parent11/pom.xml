@@ -10,7 +10,7 @@
 	
     <artifactId>bom-parent11</artifactId>    
     <packaging>pom</packaging>
-	<name>JEESL BOM - Parent</name>
+	<name>JEESL BOM - Parent 11</name>
 	
 	<build>
 		<pluginManagement>

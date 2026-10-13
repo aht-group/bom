@@ -55,13 +55,11 @@
 						</dependency>
 					</dependencies>
 				</plugin>
-			
 				<plugin>
 					<groupId>org.jeesl</groupId>
 					<artifactId>jeesl-maven</artifactId>
 					<version>0.3.2-SNAPSHOT</version>
 				</plugin>
-				
 			</plugins>
 		</pluginManagement>
 		<plugins>
@@ -74,22 +72,6 @@
 					<release>11</release>
 					<fork>true</fork>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.4.1</version>
-					<executions>
-						<execution>
-			            <id>enforce-maven</id>
-			            <goals><goal>enforce</goal></goals>
-			            <configuration>
-			              <rules>
-			                <requireMavenVersion><version>3.3.0</version></requireMavenVersion>
-			              </rules>    
-			            </configuration>
-			          </execution>
-				</executions>
 			</plugin>
 		</plugins>	
 	</build>
